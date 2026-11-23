@@ -1,0 +1,25 @@
+{
+  "retrieved_utc": "2026-11-23T22:12:41.293588+00:00",
+  "sources": [
+    {
+      "symbol": "BIL",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/BIL?period1=1630454400&period2=1790812800&interval=1d",
+      "raw_sha256": "839810bc387681e47c1da52830dbd7595bc816deaeb03d197e72e317582aa7c4"
+    },
+    {
+      "symbol": "IEF",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/IEF?period1=1630454400&period2=1790812800&interval=1d",
+      "raw_sha256": "5f6fd4c651c5e48173ae40acd7d77df037cc845deae063be86ba6fb89565e737"
+    },
+    {
+      "symbol": "LQD",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/LQD?period1=1630454400&period2=1790812800&interval=1d",
+      "raw_sha256": "defb8f876b225f1ce43a76eb84a864d2e9dbfbad0dc4357adfbcdcf34f13aa99"
+    },
+    {
+      "symbol": "VT",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/VT?period1=1630454400&period2=1790812800&interval=1d",
+      "raw_sha256": "81df4cbec0d823be6cd8f27476f495e41cec75d4c7d98927544e56f5e6059da5"
+    }
+  ]
+}
