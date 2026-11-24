@@ -1,0 +1,37 @@
+Project 2 — Video 3: Committee demo and decision
+
+[00:03]
+I used Codex to help build and verify the app. I chose the tilt, made the input prediction, and checked ALFRED myself. This project is for educational purposes only and is not investment advice. At the 6.5% return and a 3% reserve floor…
+
+[00:33]
+The app gives us 60% bills, 40% in VT to review. The reserve floor covers four quarterly payouts in our example. We used 2.5% assumed inflation, which I talked about in an earlier video, plus four points as planning for the foundation's goal of CPI plus four net after costs over a rolling five-year period.
+
+[01:03]
+Suppose the committee wants to do 7.2. The original mix fails the higher hurdle rate, and the search still finds a feasible portfolio.
+
+[01:47]
+[The app shows 55% BIL and 45% VT.] That takes estimated return from 6.91% to 7.33%, and estimated volatility from 6.04% to 6.78%. You can see the extra risk you take to clear the higher return target.
+
+[02:07]
+I expected a much bigger move in equity, but just five points was enough here. I'll reset this to base.
+
+[02:21]
+I reset it to base and get the 60/40 results. [The return target is back at 6.5%.] I want to go to the historical signal display here.
+
+[02:42]
+Here's a separate question. Did it help to move money into bills during tightening? For this example, the latest rates we could use were 0.33% for April and 0.08% for January.
+
+[03:00]
+That's up a quarter of a percentage point, so the rule fired. The model moved from a 50/50 target to 60% in bills and 40% in stocks. It still lost 3.21% that month, but the fixed 50/50 mix lost 4.02%. It did outperform.
+
+[03:26]
+The October 2025 through September 2026 holdout tells a little different story. There were zero triggers. It earns 10.09% gross and 10.08% after costs, the same net return as 50/50. The flipped rule makes the move into Treasury bills when rates fall by a quarter of a point, with the same sizing and costs, and it earned 10.38%.
+
+[03:59]
+We set that comparison before the test. The original rule fell short. The June example explains how the rule responds, while the holdout leaves us with very little evidence about its protection in another tightening period. I wouldn't adopt the flipped comparison based on that one result.
+
+[04:26]
+I'd ask the committee to pilot the screening app but reject the tested rate rule. I'd shortlist the 60/40 and hold off on moving money until we can verify liquidity, issuer exposure, and loss policy.
+
+[04:52]
+If we refresh the estimates and 60/40 goes below our hurdle, I'd rescreen before moving any money. I'd revisit the rate rule only with fresh evidence from a tightening period that shows us a benefit after costs.

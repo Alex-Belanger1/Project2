@@ -1,0 +1,34 @@
+Project 2 — Video 2: How the app and backtest work
+
+[00:04]
+I used Codex to help build the app. I chose the final tilt, wrote the separate changed-input prediction, and checked it myself. This is for educational purposes only and is not investment advice. This app does two things. The top section will show the allocation that I bring to the committee.
+
+[00:34]
+Lower down, you'll see the separate historical test of a rule for changing the allocation. I'll walk through where each result comes from. First we'll start on portfolio.py. The starting data are month-end adjusted prices for four ETFs.
+
+[01:04]
+Taking the change from one monthly close to the next gives us our monthly returns. The code uses these to estimate annual return and volatility. It also considers whether the funds tend to move together, which matters for the risk of the whole portfolio. It tries weights in five-point steps.
+
+[01:34]
+It rules out mixes that miss the target return hurdle or reserve requirement. For the ones left, it shows the mix with the lowest estimated volatility. That's what the recommendation at the top of the app means. A mix can pass those calculations and still need the committee to resolve something.
+
+[02:04]
+Something like liquidity or issuer concentration. The backtest has a different job. It needs to know which rate was available before the trade. The two observations are for January and April. We use a snapshot before the May 31 trade.
+
+[02:38]
+We apply the resulting weights to June's return. The code checks the date so that a later release doesn't make its way into the decision. If a rate pair is missing, the model keeps its existing holdings.
+
+[03:09]
+This model calculates the trade from weights that have already drifted with the market. The 25% annual turnover cap can limit the next trade. The net result deducts the modeled cost. We assume ten basis points for full one-way turnover, so a ten-point shift costs about one basis point of portfolio value.
+
+[03:42]
+I ran this. The command reproduces the course's test data. With the correct lag, the development result is 6.13% net.
+
+[04:07]
+Let the training example use a signal before it should be tradable, and it jumps to 17.72%. That jump is a warning about look-ahead. That's why I check the release date before I take a good-looking backtest result seriously.
+
+[04:31]
+I'm going to show the app. The frozen holdout is displayed separately here. The cost and timing controls let you explore development while the holdout stays fixed. A committee member can ask a different question without changing the evidence that supported the original decision.
+
+[05:11]
+This is what I was talking about earlier with the returns, inputs, and target return. For example, what I used was the 4% net return target on top of an assumed 2.5% CPI, or inflation.

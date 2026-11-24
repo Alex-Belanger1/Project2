@@ -1,0 +1,21 @@
+Project 2 — Video 1: What changed and what I checked
+
+[00:05]
+I used Codex to help build the app. The allocation choices and prediction I'm showing are mine. I checked the ALFRED numbers myself. This project is for educational purposes only and is not investment advice.
+
+The foundation has quarterly payouts, and I wanted to see if moving some money into Treasury bills during tightening could help soften losses while still keeping enough invested in stocks.
+
+[00:39]
+My first idea was a 20-point move, going from 50/50 to 70% in bills. That mix was about a 6.08% return, which is below the 6.5% hurdle. Then I went with a 10-point move to 60% in bills.
+
+[01:09]
+Forty percent in equities. That helped keep the idea I wanted to test while still clearing our estimated return hurdle. I checked the first holdout trade against ALFRED, against the source, on September 29, 2025.
+
+[01:39]
+Using ALFRED, August and May were both 4.33%. The difference is zero, so the trigger didn't fire for October. The month a rate measures and the day you can actually see it are different. That matters when you're simulating a trade. I was less accurate on the separate allocation test.
+
+[02:08]
+Before raising the return target to 7.2%, I predicted that we'd need 80% in equities. The app found that just 45% was enough. I got the direction right, but I expected a 40-point increase, and it only took five. A high return hurdle can mean more risk, but you should still check how much exposure you actually need.
+
+[02:38]
+Check how much additional exposure it actually takes. You don't want to overshoot that because then you'd be overexposed to volatility, and you would have a higher maximum drawdown.
