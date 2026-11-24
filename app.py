@@ -127,7 +127,10 @@ else:
     st.info("Largest weight change is unavailable because one of the two searches has no feasible mix.")
 
 st.header("Baselines and mandate verdicts")
-st.caption("The return hurdle uses a historical nominal estimate. Unresolved rules still need committee evidence.")
+st.caption(
+    "The search uses the selected reserve assumptions and a historical nominal return estimate. "
+    "The verdicts flag unapproved reserve classifications and other rules requiring committee evidence."
+)
 portfolios = {
     "Equal weight": equal_weight_portfolio(active_sleeves),
     "Inverse volatility": inverse_volatility_portfolio(active_sleeves),

@@ -44,14 +44,24 @@ def allocation_checks(weights, sleeves, objective, reserve_minimum, *, policy_un
         ])
     if not policy_universe:
         return checks
+    ineligible = [ticker for ticker in ("LQD", "VT")
+                  if valid and weights.get(ticker, 0) > 0 and sleeves[ticker]["reserve_eligible"]]
+    ief_counts = valid and weights.get("IEF", 0) > 0 and sleeves["IEF"]["reserve_eligible"]
+    if ineligible:
+        eligibility = check("Reserve vehicle eligibility", False,
+                            f"{', '.join(ineligible)} do not qualify for the project reserve.")
+    elif not valid or ief_counts:
+        eligibility = check("Reserve vehicle eligibility", None,
+                            "Only BIL qualifies under the working assumptions. IEF needs committee approval.")
+    else:
+        eligibility = check("Reserve vehicle eligibility", True,
+                            "No positive holding counted toward reserve uses an unapproved vehicle.")
     checks.extend([
         check("Approved vehicle universe", valid and all(
             weight == 0 or ticker in {"BIL", "IEF", "LQD", "VT"}
             for ticker, weight in weights.items()), "Direct positions are limited to the four ETF candidates."),
         check("Derivatives restriction", None, "No direct derivatives are modeled. Fund-level eligibility needs review."),
-        check("Reserve vehicle eligibility", None if valid and weights.get("IEF", 0) > 0
-              and sleeves["IEF"]["reserve_eligible"] else True,
-              "IEF needs approval before counting toward the reserve. The screen uses selected eligibility."),
+        eligibility,
         check("Five-day liquidity", None, "Need trade-size and execution evidence for the 90% liquidity rule."),
         check("8% single-issuer limit", None, "Need underlying holdings and the approved exemption policy."),
         check("25% annual turnover", None, "Static allocations do not establish realized turnover."),
