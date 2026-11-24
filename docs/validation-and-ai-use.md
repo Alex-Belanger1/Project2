@@ -4,7 +4,7 @@
 
 | Requirement | Evidence |
 | --- | --- |
-| Reproducible inputs and timing | [Data card](data-provenance.md) and [locked input hashes](../data/input_manifest.json). Sixty dated ALFRED vintages were checked against their trade cutoffs. Wrong-series, future-vintage and incomplete-month checks guard against timing errors. Vintages supply the as-known observations regardless of later revisions. |
+| Reproducible inputs and timing | [Data card](data-provenance.md) and [locked input hashes](../data/input_manifest.json). Sixty dated ALFRED vintages were checked against their trade cutoffs. Wrong-series, future-vintage and incomplete-month checks guard against timing errors. A revision audit compared the 120 locked observations with the November 23, 2026 FRED download and found zero differences across 63 distinct observation months. The strategy uses only the dated vintages. |
 | Known answers | `python backtest.py` reproduces the course gross/net results, the sign-flipped test and the lag-zero warning. Meridian's default minimum-volatility screen gives 6.51% estimated return and 9.44% volatility, with the known 0/20/25/55 weights. |
 | Benchmarks and mandate | [Screens](../output/portfolio-screen.md) compare equal weight, inverse volatility and the constrained result. The app also displays the policy reference and its reserve failure. It distinguishes modeled rules from requirements that need committee evidence. |
 | Holdout, placebo and costs | [Holdout output](../output/holdout.md). The 10 bp per 100% turnover assumption is charged symmetrically. The 25% cap is enforced by trade calendar year, even when the next month's return falls in January. |

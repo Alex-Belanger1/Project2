@@ -33,4 +33,4 @@ The student independently checked the [ALFRED vintage requested September 29, 20
 
 The source values imply a **0.00 percentage-point** change. The student's finding matched the [frozen inputs](../data/alfred/2025-09-29.csv) and the computed historical decision to target **50% BIL / 50% VT** for October. The independent check confirmed the observation dates, units, and absence of an activation in the first holdout month. No correction was needed for this check.
 
-**Pending:** final memo, recorded videos, and submission review.
+The [decision memo](decision-memo.md) and [submission validation record](validation-and-ai-use.md) are in the published package. The remaining items are recorded videos, corrected transcripts, and submission review.

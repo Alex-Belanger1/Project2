@@ -1,6 +1,6 @@
 # Project 2 — Proposed mandate and signal evaluation
 
-**Draft for review before the first strategy run.** The design evaluates whether a modest, rules-based cut to equity exposure during tightening improves a reserve portfolio after trading costs. The portfolio engine, data audit, and readiness rehearsal from the labs supply the starting evidence. A past allocation estimate is not a backtest result.
+**Pre-run design record.** This records the proposal and student choices that preceded the first strategy run. The [frozen rule](frozen-rule.md), [holdout](../output/holdout.md), and [decision memo](decision-memo.md) contain the executed record and recommendation.
 
 ## Committee and mandate
 
