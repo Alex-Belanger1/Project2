@@ -17,4 +17,6 @@ The app opens on the verified bundled ETF data, with BIL and IEF selected as eli
 
 Use `python evaluate.py --write` to regenerate the holdout Markdown and JSON. Run `python backtest.py` for the Lab 18 and 19 known answers, including the placebo and lag-zero leakage check. The [frozen rule](docs/frozen-rule.md), [data card](docs/data-provenance.md), and [submission manifest](docs/submission-manifest.md) are included.
 
+The **Historical signal replay** defaults to June 2022, a development example in which the trigger fired. It shows the two dated inputs, the requested target, the modeled holdings after the trade, and the subsequent month's net returns. The flipped comparison applies the same defensive allocation when the three-month rate change is **−0.25 percentage points or lower**. The replay is an example from the development period, separate from the holdout decision.
+
 The [course Project 2 requirements](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/projects/project-2-investment-management-application.md) govern the final submission.

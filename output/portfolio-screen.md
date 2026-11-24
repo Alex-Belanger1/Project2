@@ -26,3 +26,7 @@ Each row changes one assumption from the full-sample 6.5% return / 3% reserve ba
 | 3 | Reduce estimated annual VT return by 1 point | 0 points | The allocation stays the same but its modeled return falls to 6.51%, almost at the hurdle. |
 
 Lag and cost belong to the separate backtest. Over development only, widening the publication buffer from one day to seven moves net return by **0.000 points**. Raising the one-way turnover cost from 10 to 25 bp reduces net return by **0.113 points**. The two comparisons use the same development months and leave the holdout fixed. [Method and inputs](../docs/validation-and-ai-use.md).
+
+## A development month when the signal fired
+
+At the May 31, 2022 trade, the [May 30 ALFRED vintage](../data/alfred/2022-05-30.csv) had April FEDFUNDS at 0.33% and January at 0.08%. The +0.25 percentage-point change met the threshold. The modeled trade reached 60% BIL / 40% VT for June. That month's net result was **−3.21%**, versus **−4.02%** for fixed 50/50. The flipped rule stayed at 50/50 because it calls for the defensive mix on a decline of at least 0.25 points. This example shows how the rule worked during development and does not enter the evaluation of the holdout decision.

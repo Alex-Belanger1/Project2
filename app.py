@@ -2,6 +2,8 @@
 
 import json
 from copy import deepcopy
+from datetime import date
+from decimal import Decimal
 from pathlib import Path
 
 import streamlit as st
@@ -32,7 +34,7 @@ st.caption("Built with AI help, a learning demonstration, not investment advice.
 
 def reset_base():
     """Restore the reference scenario and all editable controls."""
-    keys = {"source", "objective", "reserve_minimum", "recent_window", "lag", "cost_bp"}
+    keys = {"source", "objective", "reserve_minimum", "recent_window", "lag", "cost_bp", "replay_month"}
     for key in list(st.session_state):
         if key in keys or key.startswith(("return_", "eligibility_")):
             del st.session_state[key]
@@ -200,6 +202,51 @@ if result_file.is_file():
     st.dataframe(holdout_rows, hide_index=True)
 else:
     st.info("Run `python evaluate.py --write` to generate the frozen result.")
+
+if result_file.is_file():
+    st.header("Historical signal replay")
+    st.caption(
+        "Development months only. The replay reads recorded trades and returns. "
+        "This example is separate from the holdout."
+    )
+    development_audit = {
+        row["return_month"]: row for row in evidence["vintage_audit"]
+        if row["return_month"] < evidence["holdout_start"]
+    }
+    replay_months = list(development_audit)
+    replay_month = st.selectbox(
+        "Holding month", replay_months, index=replay_months.index("2022-06"), key="replay_month"
+    )
+    audit_row = development_audit[replay_month]
+    rate_pair = audit_row["rate_pair"]
+    replay_rows = {
+        name: next(row for row in evidence["monthly"][name] if row["month"] == replay_month)
+        for name in ("FEDFUNDS overlay", "Fixed 50/50", "Flipped signal")
+    }
+    rule_row = replay_rows["FEDFUNDS overlay"]
+    st.write(f"Trade date: **{audit_row['trade_date']}**. ALFRED cutoff: **{audit_row['cutoff']}**.")
+    if rate_pair is not None:
+        latest_month = date.fromisoformat(rate_pair["latest_month"]).strftime("%b %Y")
+        earlier_month = date.fromisoformat(rate_pair["prior_month"]).strftime("%b %Y")
+        change = Decimal(rate_pair["latest_value"]) - Decimal(rate_pair["prior_value"])
+        st.write(
+            f"{latest_month}: **{rate_pair['latest_value']}%** · "
+            f"{earlier_month}: **{rate_pair['prior_value']}%** · "
+            f"Change: **{change:+.2f} percentage points**."
+        )
+        if rule_row["target"] == DEFENSIVE_EQUITY:
+            st.success("Trigger fired. Shift the target from 50% BIL / 50% VT to 60% BIL / 40% VT.")
+        else:
+            st.info("Trigger did not fire. Keep the 50% BIL / 50% VT target.")
+    else:
+        st.info("No rate pair was available by the cutoff. Keep the existing holdings.")
+    if rule_row["cap_limited"]:
+        st.caption("The annual turnover cap limited the trade, so the modeled weight differs from the target.")
+    st.table([
+        {"Strategy": name, "BIL held": f"{1 - row['equity_weight']:.2%}",
+         "VT held": f"{row['equity_weight']:.2%}", "Holding-month net return": f"{row['net_return']:.2%}"}
+        for name, row in replay_rows.items()
+    ])
 
 st.header("Development sensitivity")
 st.caption("October 2021–September 2025 only. These controls leave the frozen holdout unchanged.")
