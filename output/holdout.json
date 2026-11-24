@@ -1,0 +1,3300 @@
+{
+  "manifest_sha256": "20e0bc409af2ea703793bc72f081bd040a4c8b8411a14079a1b3f719a8aa9e0a",
+  "development": "2021-10 to 2025-09",
+  "holdout": "2025-10 to 2026-09",
+  "holdout_start": "2025-10",
+  "results": {
+    "FEDFUNDS overlay": {
+      "development": {
+        "gross": 0.31272214306392154,
+        "net": 0.3119709450743524,
+        "switches": 47,
+        "turnover": 0.5732083767887186,
+        "max_drawdown": 0.11669265554367847,
+        "worst_month": -0.04053720695347961,
+        "average_equity": 0.46226400635494364,
+        "cap_limited_months": 1,
+        "defensive_requests": 18
+      },
+      "holdout": {
+        "gross": 0.10092905401680641,
+        "net": 0.10083896237985979,
+        "switches": 12,
+        "turnover": 0.08319665915975227,
+        "max_drawdown": 0.02966250716659291,
+        "worst_month": -0.02966250716659287,
+        "average_equity": 0.5,
+        "cap_limited_months": 0,
+        "defensive_requests": 0
+      }
+    },
+    "Flipped signal": {
+      "development": {
+        "gross": 0.32470080320346684,
+        "net": 0.3238566121441555,
+        "switches": 47,
+        "turnover": 0.6424551298626472,
+        "max_drawdown": 0.13084448807576676,
+        "worst_month": -0.046622059848529664,
+        "average_equity": 0.4895833333333332,
+        "cap_limited_months": 0,
+        "defensive_requests": 5
+      },
+      "holdout": {
+        "gross": 0.10411021489851824,
+        "net": 0.10380682208818959,
+        "switches": 12,
+        "turnover": 0.28208982304109037,
+        "max_drawdown": 0.02315493557927073,
+        "worst_month": -0.02315493557927062,
+        "average_equity": 0.47601675571267466,
+        "cap_limited_months": 1,
+        "defensive_requests": 3
+      }
+    },
+    "Fixed 50/50": {
+      "development": {
+        "gross": 0.3179233001338999,
+        "net": 0.3173413208199347,
+        "switches": 47,
+        "turnover": 0.4446471475912098,
+        "max_drawdown": 0.13084448807576676,
+        "worst_month": -0.046622059848529664,
+        "average_equity": 0.5,
+        "cap_limited_months": 0,
+        "defensive_requests": 0
+      },
+      "holdout": {
+        "gross": 0.10092905401680641,
+        "net": 0.10083896237985979,
+        "switches": 12,
+        "turnover": 0.08319665915975227,
+        "max_drawdown": 0.02966250716659291,
+        "worst_month": -0.02966250716659287,
+        "average_equity": 0.5,
+        "cap_limited_months": 0,
+        "defensive_requests": 0
+      }
+    },
+    "VT buy-and-hold reference": {
+      "development": {
+        "gross": 0.4700249367736098,
+        "net": 0.4700249367736098,
+        "switches": 0,
+        "turnover": 0,
+        "max_drawdown": 0.2550928934961386,
+        "worst_month": -0.09528939596309571,
+        "average_equity": 1.0,
+        "cap_limited_months": 0,
+        "defensive_requests": 0
+      },
+      "holdout": {
+        "gross": 0.1645452402354033,
+        "net": 0.1645452402354033,
+        "switches": 0,
+        "turnover": 0,
+        "max_drawdown": 0.062196298117494164,
+        "worst_month": -0.062196298117494164,
+        "average_equity": 1.0,
+        "cap_limited_months": 0,
+        "defensive_requests": 0
+      }
+    }
+  },
+  "decision": "Reject",
+  "reasons": [
+    "net return trailed the flipped signal"
+  ],
+  "monthly": {
+    "FEDFUNDS overlay": [
+      {
+        "month": "2021-10",
+        "equity_weight": 0.5,
+        "gross_return": 0.02567435880887592,
+        "net_return": 0.02567435880887592,
+        "turnover": 0.0,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2021-09-30"
+      },
+      {
+        "month": "2021-11",
+        "equity_weight": 0.5,
+        "gross_return": -0.013184963229434854,
+        "net_return": -0.013197532333185675,
+        "turnover": 0.012569103750820876,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2021-10-29"
+      },
+      {
+        "month": "2021-12",
+        "equity_weight": 0.5,
+        "gross_return": 0.01902966669292594,
+        "net_return": 0.019023097008636327,
+        "turnover": 0.006569684289613298,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2021-11-30"
+      },
+      {
+        "month": "2022-01",
+        "equity_weight": 0.5,
+        "gross_return": -0.022898520769198738,
+        "net_return": -0.02290785791968361,
+        "turnover": 0.009337150484874046,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2021-12-31"
+      },
+      {
+        "month": "2022-02",
+        "equity_weight": 0.5,
+        "gross_return": -0.013961705778437472,
+        "net_return": -0.013973423353968738,
+        "turnover": 0.011717575531266677,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-01-31"
+      },
+      {
+        "month": "2022-03",
+        "equity_weight": 0.5,
+        "gross_return": 0.009657042513052438,
+        "net_return": 0.009650073654923663,
+        "turnover": 0.006968858128775568,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-02-28"
+      },
+      {
+        "month": "2022-04",
+        "equity_weight": 0.5,
+        "gross_return": -0.040532652231310085,
+        "net_return": -0.04053720695347961,
+        "turnover": 0.004554722169520908,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-03-31"
+      },
+      {
+        "month": "2022-05",
+        "equity_weight": 0.5,
+        "gross_return": 0.0026347465930083303,
+        "net_return": 0.002613681214394828,
+        "turnover": 0.021065378613502495,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-04-29"
+      },
+      {
+        "month": "2022-06",
+        "equity_weight": 0.4,
+        "gross_return": -0.032020924692931496,
+        "net_return": -0.03212207501881788,
+        "turnover": 0.10115032588638018,
+        "target": 0.4,
+        "cap_limited": false,
+        "decision_date": "2022-05-31"
+      },
+      {
+        "month": "2022-07",
+        "equity_weight": 0.4,
+        "gross_return": 0.02815201019570379,
+        "net_return": 0.02813168063846052,
+        "turnover": 0.020329557243273233,
+        "target": 0.4,
+        "cap_limited": false,
+        "decision_date": "2022-06-30"
+      },
+      {
+        "month": "2022-08",
+        "equity_weight": 0.4,
+        "gross_return": -0.015047786387065054,
+        "net_return": -0.015064004353373591,
+        "turnover": 0.016217966308537335,
+        "target": 0.4,
+        "cap_limited": false,
+        "decision_date": "2022-07-29"
+      },
+      {
+        "month": "2022-09",
+        "equity_weight": 0.4,
+        "gross_return": -0.03687560297143455,
+        "net_return": -0.03688594989379897,
+        "turnover": 0.010346922364417699,
+        "target": 0.4,
+        "cap_limited": false,
+        "decision_date": "2022-08-31"
+      },
+      {
+        "month": "2022-10",
+        "equity_weight": 0.4,
+        "gross_return": 0.026458544133524775,
+        "net_return": 0.02643428400963138,
+        "turnover": 0.024260123893395158,
+        "target": 0.4,
+        "cap_limited": false,
+        "decision_date": "2022-09-30"
+      },
+      {
+        "month": "2022-11",
+        "equity_weight": 0.4,
+        "gross_return": 0.035021615275146356,
+        "net_return": 0.03500707628419126,
+        "turnover": 0.0145389909550947,
+        "target": 0.4,
+        "cap_limited": false,
+        "decision_date": "2022-10-31"
+      },
+      {
+        "month": "2022-12",
+        "equity_weight": 0.4,
+        "gross_return": -0.015573893364543512,
+        "net_return": -0.015592368429165346,
+        "turnover": 0.018475064621834902,
+        "target": 0.4,
+        "cap_limited": false,
+        "decision_date": "2022-11-30"
+      },
+      {
+        "month": "2023-01",
+        "equity_weight": 0.38867230503728806,
+        "gross_return": 0.03145518839573569,
+        "net_return": 0.03145481388145169,
+        "turnover": 0.0003745142840011484,
+        "target": 0.4,
+        "cap_limited": true,
+        "decision_date": "2022-12-30"
+      },
+      {
+        "month": "2023-02",
+        "equity_weight": 0.4,
+        "gross_return": -0.010643733358763785,
+        "net_return": -0.010649363922544274,
+        "turnover": 0.0056305637804883735,
+        "target": 0.4,
+        "cap_limited": false,
+        "decision_date": "2023-01-31"
+      },
+      {
+        "month": "2023-03",
+        "equity_weight": 0.4,
+        "gross_return": 0.01379548758039717,
+        "net_return": 0.013786935899999261,
+        "turnover": 0.00855168039790849,
+        "target": 0.4,
+        "cap_limited": false,
+        "decision_date": "2023-02-28"
+      },
+      {
+        "month": "2023-04",
+        "equity_weight": 0.4,
+        "gross_return": 0.00786820893109419,
+        "net_return": 0.00786240651325459,
+        "turnover": 0.005802417839599006,
+        "target": 0.4,
+        "cap_limited": false,
+        "decision_date": "2023-03-31"
+      },
+      {
+        "month": "2023-05",
+        "equity_weight": 0.4,
+        "gross_return": -0.002588187751214832,
+        "net_return": -0.0025907106865589165,
+        "turnover": 0.0025229353440844315,
+        "target": 0.4,
+        "cap_limited": false,
+        "decision_date": "2023-04-28"
+      },
+      {
+        "month": "2023-06",
+        "equity_weight": 0.4,
+        "gross_return": 0.02599528008033669,
+        "net_return": 0.025991466059877292,
+        "turnover": 0.003814020459400602,
+        "target": 0.4,
+        "cap_limited": false,
+        "decision_date": "2023-05-31"
+      },
+      {
+        "month": "2023-07",
+        "equity_weight": 0.4,
+        "gross_return": 0.017205760794643865,
+        "net_return": 0.017193252199562407,
+        "turnover": 0.012508595081458462,
+        "target": 0.4,
+        "cap_limited": false,
+        "decision_date": "2023-06-30"
+      },
+      {
+        "month": "2023-08",
+        "equity_weight": 0.4,
+        "gross_return": -0.008392676866364579,
+        "net_return": -0.008400548731853186,
+        "turnover": 0.007871865488607965,
+        "target": 0.4,
+        "cap_limited": false,
+        "decision_date": "2023-07-31"
+      },
+      {
+        "month": "2023-09",
+        "equity_weight": 0.4,
+        "gross_return": -0.014624474698246348,
+        "net_return": -0.014632558292909197,
+        "turnover": 0.008083594662849303,
+        "target": 0.4,
+        "cap_limited": false,
+        "decision_date": "2023-08-31"
+      },
+      {
+        "month": "2023-10",
+        "equity_weight": 0.4,
+        "gross_return": -0.009090744340211954,
+        "net_return": -0.009102079443635714,
+        "turnover": 0.011335103423759929,
+        "target": 0.4,
+        "cap_limited": false,
+        "decision_date": "2023-09-29"
+      },
+      {
+        "month": "2023-11",
+        "equity_weight": 0.4,
+        "gross_return": 0.03884750983838914,
+        "net_return": 0.038839396003123756,
+        "turnover": 0.00811383526538495,
+        "target": 0.4,
+        "cap_limited": false,
+        "decision_date": "2023-10-31"
+      },
+      {
+        "month": "2023-12",
+        "equity_weight": 0.5,
+        "gross_return": 0.02792492301217253,
+        "net_return": 0.027844655536874218,
+        "turnover": 0.08026747529831435,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-11-30"
+      },
+      {
+        "month": "2024-01",
+        "equity_weight": 0.5,
+        "gross_return": 0.0021337049043763656,
+        "net_return": 0.002122201071710982,
+        "turnover": 0.011503832665383462,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-12-29"
+      },
+      {
+        "month": "2024-02",
+        "equity_weight": 0.5,
+        "gross_return": 0.024675114229747663,
+        "net_return": 0.02467404964879707,
+        "turnover": 0.0010645809505928083,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-01-31"
+      },
+      {
+        "month": "2024-03",
+        "equity_weight": 0.5,
+        "gross_return": 0.017996292279153225,
+        "net_return": 0.017986420061560753,
+        "turnover": 0.00987221759247403,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-02-29"
+      },
+      {
+        "month": "2024-04",
+        "equity_weight": 0.5,
+        "gross_return": -0.015757418797599954,
+        "net_return": -0.015764243337319406,
+        "turnover": 0.006824539719453071,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-03-28"
+      },
+      {
+        "month": "2024-05",
+        "equity_weight": 0.5,
+        "gross_return": 0.02528252237820805,
+        "net_return": 0.025272321918663274,
+        "turnover": 0.01020045954477472,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-04-30"
+      },
+      {
+        "month": "2024-06",
+        "equity_weight": 0.5,
+        "gross_return": 0.009926508952504909,
+        "net_return": 0.009916409559211676,
+        "turnover": 0.010099393293232173,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-05-31"
+      },
+      {
+        "month": "2024-07",
+        "equity_weight": 0.5,
+        "gross_return": 0.012153864881722765,
+        "net_return": 0.012150927171406468,
+        "turnover": 0.002937710316297082,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-06-28"
+      },
+      {
+        "month": "2024-08",
+        "equity_weight": 0.5,
+        "gross_return": 0.013974926318286451,
+        "net_return": 0.013971149455581937,
+        "turnover": 0.0037768627045150494,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-07-31"
+      },
+      {
+        "month": "2024-09",
+        "equity_weight": 0.5,
+        "gross_return": 0.01309366394439504,
+        "net_return": 0.013089049515328287,
+        "turnover": 0.004614429066751913,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-08-30"
+      },
+      {
+        "month": "2024-10",
+        "equity_weight": 0.5,
+        "gross_return": -0.008928235808080442,
+        "net_return": -0.008932614200149264,
+        "turnover": 0.0043783920688204025,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-09-30"
+      },
+      {
+        "month": "2024-11",
+        "equity_weight": 0.5,
+        "gross_return": 0.022564157021993214,
+        "net_return": 0.022557660851205946,
+        "turnover": 0.006496170787269218,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-10-31"
+      },
+      {
+        "month": "2024-12",
+        "equity_weight": 0.5,
+        "gross_return": -0.012666331831085897,
+        "net_return": -0.012675552305576843,
+        "turnover": 0.009220474490946096,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-11-29"
+      },
+      {
+        "month": "2025-01",
+        "equity_weight": 0.5,
+        "gross_return": 0.01702927431638246,
+        "net_return": 0.017020818451871114,
+        "turnover": 0.008455864511347111,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-12-31"
+      },
+      {
+        "month": "2025-02",
+        "equity_weight": 0.5,
+        "gross_return": -0.00044608283318947617,
+        "net_return": -0.000452734122696355,
+        "turnover": 0.006651289506878877,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-01-31"
+      },
+      {
+        "month": "2025-03",
+        "equity_weight": 0.5,
+        "gross_return": -0.015953247915669544,
+        "net_return": -0.015955090574075563,
+        "turnover": 0.0018426584060194928,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-02-28"
+      },
+      {
+        "month": "2025-04",
+        "equity_weight": 0.5,
+        "gross_return": 0.004503917627803666,
+        "net_return": 0.004494149988110416,
+        "turnover": 0.00976763969325023,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-03-31"
+      },
+      {
+        "month": "2025-05",
+        "equity_weight": 0.5,
+        "gross_return": 0.030846988256400865,
+        "net_return": 0.0308464397477976,
+        "turnover": 0.0005485086032618325,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-04-30"
+      },
+      {
+        "month": "2025-06",
+        "equity_weight": 0.5,
+        "gross_return": 0.025039374724769914,
+        "net_return": 0.025026174530059325,
+        "turnover": 0.013200194710589863,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-05-30"
+      },
+      {
+        "month": "2025-07",
+        "equity_weight": 0.5,
+        "gross_return": 0.007268455146524744,
+        "net_return": 0.007257873984301304,
+        "turnover": 0.010581162223439744,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-06-30"
+      },
+      {
+        "month": "2025-08",
+        "equity_weight": 0.5,
+        "gross_return": 0.016630903963274157,
+        "net_return": 0.016629065974393967,
+        "turnover": 0.0018379888801898225,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-07-31"
+      },
+      {
+        "month": "2025-09",
+        "equity_weight": 0.5,
+        "gross_return": 0.01850782145311647,
+        "net_return": 0.0185014654716304,
+        "turnover": 0.00635598148606753,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-08-29"
+      },
+      {
+        "month": "2025-10",
+        "equity_weight": 0.5,
+        "gross_return": 0.01187865077039918,
+        "net_return": 0.01187118623742842,
+        "turnover": 0.007464532970759996,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-09-30"
+      },
+      {
+        "month": "2025-11",
+        "equity_weight": 0.5,
+        "gross_return": 0.002504752885187589,
+        "net_return": 0.0025006179754040107,
+        "turnover": 0.004134909783578111,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-10-31"
+      },
+      {
+        "month": "2025-12",
+        "equity_weight": 0.5,
+        "gross_return": 0.006285606892675766,
+        "net_return": 0.006285421896628292,
+        "turnover": 0.0001849960474737955,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-11-28"
+      },
+      {
+        "month": "2026-01",
+        "equity_weight": 0.5,
+        "gross_return": 0.017038018222504725,
+        "net_return": 0.017036560597192798,
+        "turnover": 0.0014576253119262805,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-12-31"
+      },
+      {
+        "month": "2026-02",
+        "equity_weight": 0.5,
+        "gross_return": 0.00955108714741515,
+        "net_return": 0.009544163362183309,
+        "turnover": 0.006923785231839674,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2026-01-30"
+      },
+      {
+        "month": "2026-03",
+        "equity_weight": 0.5,
+        "gross_return": -0.02965909940594036,
+        "net_return": -0.02966250716659287,
+        "turnover": 0.0034077606525084736,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2026-02-27"
+      },
+      {
+        "month": "2026-04",
+        "equity_weight": 0.5,
+        "gross_return": 0.04800319398809316,
+        "net_return": 0.047986428128439285,
+        "turnover": 0.01676585965387728,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2026-03-31"
+      },
+      {
+        "month": "2026-05",
+        "equity_weight": 0.5,
+        "gross_return": 0.024470593898107573,
+        "net_return": 0.024449070069431558,
+        "turnover": 0.0215238286760141,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2026-04-30"
+      },
+      {
+        "month": "2026-06",
+        "equity_weight": 0.5,
+        "gross_return": -0.0005446023282018597,
+        "net_return": -0.0005549962939460352,
+        "turnover": 0.010393965744175504,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2026-05-29"
+      },
+      {
+        "month": "2026-07",
+        "equity_weight": 0.5,
+        "gross_return": -0.0017869508699794867,
+        "net_return": -0.0017885862846754854,
+        "turnover": 0.0016354146959986493,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2026-06-30"
+      },
+      {
+        "month": "2026-08",
+        "equity_weight": 0.5,
+        "gross_return": 0.016429448946019942,
+        "net_return": 0.016426865370677824,
+        "turnover": 0.0025835753421175056,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2026-07-31"
+      },
+      {
+        "month": "2026-09",
+        "equity_weight": 0.5,
+        "gross_return": -0.005723054534253258,
+        "net_return": -0.005729774939302741,
+        "turnover": 0.006720405049482903,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2026-08-31"
+      }
+    ],
+    "Flipped signal": [
+      {
+        "month": "2021-10",
+        "equity_weight": 0.5,
+        "gross_return": 0.02567435880887592,
+        "net_return": 0.02567435880887592,
+        "turnover": 0.0,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2021-09-30"
+      },
+      {
+        "month": "2021-11",
+        "equity_weight": 0.5,
+        "gross_return": -0.013184963229434854,
+        "net_return": -0.013197532333185675,
+        "turnover": 0.012569103750820876,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2021-10-29"
+      },
+      {
+        "month": "2021-12",
+        "equity_weight": 0.5,
+        "gross_return": 0.01902966669292594,
+        "net_return": 0.019023097008636327,
+        "turnover": 0.006569684289613298,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2021-11-30"
+      },
+      {
+        "month": "2022-01",
+        "equity_weight": 0.5,
+        "gross_return": -0.022898520769198738,
+        "net_return": -0.02290785791968361,
+        "turnover": 0.009337150484874046,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2021-12-31"
+      },
+      {
+        "month": "2022-02",
+        "equity_weight": 0.5,
+        "gross_return": -0.013961705778437472,
+        "net_return": -0.013973423353968738,
+        "turnover": 0.011717575531266677,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-01-31"
+      },
+      {
+        "month": "2022-03",
+        "equity_weight": 0.5,
+        "gross_return": 0.009657042513052438,
+        "net_return": 0.009650073654923663,
+        "turnover": 0.006968858128775568,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-02-28"
+      },
+      {
+        "month": "2022-04",
+        "equity_weight": 0.5,
+        "gross_return": -0.040532652231310085,
+        "net_return": -0.04053720695347961,
+        "turnover": 0.004554722169520908,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-03-31"
+      },
+      {
+        "month": "2022-05",
+        "equity_weight": 0.5,
+        "gross_return": 0.0026347465930083303,
+        "net_return": 0.002613681214394828,
+        "turnover": 0.021065378613502495,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-04-29"
+      },
+      {
+        "month": "2022-06",
+        "equity_weight": 0.5,
+        "gross_return": -0.04022033553532545,
+        "net_return": -0.040221485861211825,
+        "turnover": 0.001150325886380199,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-05-31"
+      },
+      {
+        "month": "2022-07",
+        "equity_weight": 0.5,
+        "gross_return": 0.03509973297129099,
+        "net_return": 0.035078375436989176,
+        "turnover": 0.0213575343018112,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-06-30"
+      },
+      {
+        "month": "2022-08",
+        "equity_weight": 0.5,
+        "gross_return": -0.01929412975661271,
+        "net_return": -0.019310910078726318,
+        "turnover": 0.016780322113607582,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-07-29"
+      },
+      {
+        "month": "2022-09",
+        "equity_weight": 0.5,
+        "gross_return": -0.04661123513671139,
+        "net_return": -0.046622059848529664,
+        "turnover": 0.010824711818268773,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-08-31"
+      },
+      {
+        "month": "2022-10",
+        "equity_weight": 0.5,
+        "gross_return": 0.032676740587248565,
+        "net_return": 0.0326512115677025,
+        "turnover": 0.025529019546063403,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-09-30"
+      },
+      {
+        "month": "2022-11",
+        "equity_weight": 0.5,
+        "gross_return": 0.042989153286481674,
+        "net_return": 0.04297409969756723,
+        "turnover": 0.01505358891444497,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-10-31"
+      },
+      {
+        "month": "2022-12",
+        "equity_weight": 0.5,
+        "gross_return": -0.020373876817783243,
+        "net_return": -0.02039297466263194,
+        "turnover": 0.0190978448486957,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-11-30"
+      },
+      {
+        "month": "2023-01",
+        "equity_weight": 0.5,
+        "gross_return": 0.03965072080715304,
+        "net_return": 0.039638471278124435,
+        "turnover": 0.012249529028603823,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-12-30"
+      },
+      {
+        "month": "2023-02",
+        "equity_weight": 0.5,
+        "gross_return": -0.014169007772090403,
+        "net_return": -0.014186709941993097,
+        "turnover": 0.01770216990269413,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-01-31"
+      },
+      {
+        "month": "2023-03",
+        "equity_weight": 0.5,
+        "gross_return": 0.01624651467324778,
+        "net_return": 0.016237574818340806,
+        "turnover": 0.008939854906974742,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-02-28"
+      },
+      {
+        "month": "2023-04",
+        "equity_weight": 0.5,
+        "gross_return": 0.0089277032337991,
+        "net_return": 0.008921673626175701,
+        "turnover": 0.0060296076233991025,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-03-31"
+      },
+      {
+        "month": "2023-05",
+        "equity_weight": 0.5,
+        "gross_return": -0.00417324985886669,
+        "net_return": -0.004175875156743111,
+        "turnover": 0.00262529787642074,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-04-28"
+      },
+      {
+        "month": "2023-06",
+        "equity_weight": 0.5,
+        "gross_return": 0.031342679877842006,
+        "net_return": 0.03133870061611945,
+        "turnover": 0.003979261722551974,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-05-31"
+      },
+      {
+        "month": "2023-07",
+        "equity_weight": 0.5,
+        "gross_return": 0.02054213867931587,
+        "net_return": 0.020529176450800952,
+        "turnover": 0.012962228514916463,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-06-30"
+      },
+      {
+        "month": "2023-08",
+        "equity_weight": 0.5,
+        "gross_return": -0.011732573393416823,
+        "net_return": -0.011740746446145908,
+        "turnover": 0.008173052729085528,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-07-31"
+      },
+      {
+        "month": "2023-09",
+        "equity_weight": 0.5,
+        "gross_return": -0.0192783636526368,
+        "net_return": -0.019286812520921674,
+        "turnover": 0.008448868284874178,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-08-31"
+      },
+      {
+        "month": "2023-10",
+        "equity_weight": 0.5,
+        "gross_return": -0.012440775366615586,
+        "net_return": -0.012452638796517377,
+        "turnover": 0.011863429901790457,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-09-29"
+      },
+      {
+        "month": "2023-11",
+        "equity_weight": 0.5,
+        "gross_return": 0.047388794900543596,
+        "net_return": 0.04738031431795462,
+        "turnover": 0.008480582588976548,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-10-31"
+      },
+      {
+        "month": "2023-12",
+        "equity_weight": 0.5,
+        "gross_return": 0.02792492301217253,
+        "net_return": 0.02790453591928081,
+        "turnover": 0.020387092891721914,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-11-30"
+      },
+      {
+        "month": "2024-01",
+        "equity_weight": 0.5,
+        "gross_return": 0.0021337049043763656,
+        "net_return": 0.002122201071710982,
+        "turnover": 0.011503832665383462,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-12-29"
+      },
+      {
+        "month": "2024-02",
+        "equity_weight": 0.5,
+        "gross_return": 0.024675114229747663,
+        "net_return": 0.02467404964879707,
+        "turnover": 0.0010645809505928083,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-01-31"
+      },
+      {
+        "month": "2024-03",
+        "equity_weight": 0.5,
+        "gross_return": 0.017996292279153225,
+        "net_return": 0.017986420061560753,
+        "turnover": 0.00987221759247403,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-02-29"
+      },
+      {
+        "month": "2024-04",
+        "equity_weight": 0.5,
+        "gross_return": -0.015757418797599954,
+        "net_return": -0.015764243337319406,
+        "turnover": 0.006824539719453071,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-03-28"
+      },
+      {
+        "month": "2024-05",
+        "equity_weight": 0.5,
+        "gross_return": 0.02528252237820805,
+        "net_return": 0.025272321918663274,
+        "turnover": 0.01020045954477472,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-04-30"
+      },
+      {
+        "month": "2024-06",
+        "equity_weight": 0.5,
+        "gross_return": 0.009926508952504909,
+        "net_return": 0.009916409559211676,
+        "turnover": 0.010099393293232173,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-05-31"
+      },
+      {
+        "month": "2024-07",
+        "equity_weight": 0.5,
+        "gross_return": 0.012153864881722765,
+        "net_return": 0.012150927171406468,
+        "turnover": 0.002937710316297082,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-06-28"
+      },
+      {
+        "month": "2024-08",
+        "equity_weight": 0.5,
+        "gross_return": 0.013974926318286451,
+        "net_return": 0.013971149455581937,
+        "turnover": 0.0037768627045150494,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-07-31"
+      },
+      {
+        "month": "2024-09",
+        "equity_weight": 0.5,
+        "gross_return": 0.01309366394439504,
+        "net_return": 0.013089049515328287,
+        "turnover": 0.004614429066751913,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-08-30"
+      },
+      {
+        "month": "2024-10",
+        "equity_weight": 0.5,
+        "gross_return": -0.008928235808080442,
+        "net_return": -0.008932614200149264,
+        "turnover": 0.0043783920688204025,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-09-30"
+      },
+      {
+        "month": "2024-11",
+        "equity_weight": 0.5,
+        "gross_return": 0.022564157021993214,
+        "net_return": 0.022557660851205946,
+        "turnover": 0.006496170787269218,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-10-31"
+      },
+      {
+        "month": "2024-12",
+        "equity_weight": 0.4,
+        "gross_return": -0.009326827940874804,
+        "net_return": -0.009436048415365751,
+        "turnover": 0.10922047449094607,
+        "target": 0.4,
+        "cap_limited": false,
+        "decision_date": "2024-11-29"
+      },
+      {
+        "month": "2025-01",
+        "equity_weight": 0.4,
+        "gross_return": 0.014323451860202674,
+        "net_return": 0.01431536159434855,
+        "turnover": 0.008090265854123924,
+        "target": 0.4,
+        "cap_limited": false,
+        "decision_date": "2024-12-31"
+      },
+      {
+        "month": "2025-02",
+        "equity_weight": 0.4,
+        "gross_return": 0.00029065173790532306,
+        "net_return": 0.0002842494666348306,
+        "turnover": 0.006402271270492477,
+        "target": 0.4,
+        "cap_limited": false,
+        "decision_date": "2025-01-31"
+      },
+      {
+        "month": "2025-03",
+        "equity_weight": 0.4,
+        "gross_return": -0.012108522269400401,
+        "net_return": -0.012110289918600716,
+        "turnover": 0.0017676492003155242,
+        "target": 0.4,
+        "cap_limited": false,
+        "decision_date": "2025-02-28"
+      },
+      {
+        "month": "2025-04",
+        "equity_weight": 0.4,
+        "gross_return": 0.004283526011471972,
+        "net_return": 0.004274185570989336,
+        "turnover": 0.009340440482635937,
+        "target": 0.4,
+        "cap_limited": false,
+        "decision_date": "2025-03-31"
+      },
+      {
+        "month": "2025-05",
+        "equity_weight": 0.5,
+        "gross_return": 0.030846988256400865,
+        "net_return": 0.03074751494021624,
+        "turnover": 0.09947331618462707,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-04-30"
+      },
+      {
+        "month": "2025-06",
+        "equity_weight": 0.5,
+        "gross_return": 0.025039374724769914,
+        "net_return": 0.025026174530059325,
+        "turnover": 0.013200194710589863,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-05-30"
+      },
+      {
+        "month": "2025-07",
+        "equity_weight": 0.5,
+        "gross_return": 0.007268455146524744,
+        "net_return": 0.007257873984301304,
+        "turnover": 0.010581162223439744,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-06-30"
+      },
+      {
+        "month": "2025-08",
+        "equity_weight": 0.5,
+        "gross_return": 0.016630903963274157,
+        "net_return": 0.016629065974393967,
+        "turnover": 0.0018379888801898225,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-07-31"
+      },
+      {
+        "month": "2025-09",
+        "equity_weight": 0.5,
+        "gross_return": 0.01850782145311647,
+        "net_return": 0.0185014654716304,
+        "turnover": 0.00635598148606753,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-08-29"
+      },
+      {
+        "month": "2025-10",
+        "equity_weight": 0.5,
+        "gross_return": 0.01187865077039918,
+        "net_return": 0.01187118623742842,
+        "turnover": 0.007464532970759996,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-09-30"
+      },
+      {
+        "month": "2025-11",
+        "equity_weight": 0.5,
+        "gross_return": 0.002504752885187589,
+        "net_return": 0.0025006179754040107,
+        "turnover": 0.004134909783578111,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-10-31"
+      },
+      {
+        "month": "2025-12",
+        "equity_weight": 0.5,
+        "gross_return": 0.006285606892675766,
+        "net_return": 0.006285421896628292,
+        "turnover": 0.0001849960474737955,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-11-28"
+      },
+      {
+        "month": "2026-01",
+        "equity_weight": 0.41220106855209615,
+        "gross_return": 0.014564984733274722,
+        "net_return": 0.014475728176514891,
+        "turnover": 0.08925655675983013,
+        "target": 0.4,
+        "cap_limited": true,
+        "decision_date": "2025-12-31"
+      },
+      {
+        "month": "2026-02",
+        "equity_weight": 0.4,
+        "gross_return": 0.008174963758823983,
+        "net_return": 0.008156036040707105,
+        "turnover": 0.01892771811687821,
+        "target": 0.4,
+        "cap_limited": false,
+        "decision_date": "2026-01-30"
+      },
+      {
+        "month": "2026-03",
+        "equity_weight": 0.4,
+        "gross_return": -0.023151659663629642,
+        "net_return": -0.02315493557927062,
+        "turnover": 0.003275915640977012,
+        "target": 0.4,
+        "cap_limited": false,
+        "decision_date": "2026-02-27"
+      },
+      {
+        "month": "2026-04",
+        "equity_weight": 0.5,
+        "gross_return": 0.04800319398809316,
+        "net_return": 0.047887205983879355,
+        "turnover": 0.11598800421380445,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2026-03-31"
+      },
+      {
+        "month": "2026-05",
+        "equity_weight": 0.5,
+        "gross_return": 0.024470593898107573,
+        "net_return": 0.024449070069431558,
+        "turnover": 0.0215238286760141,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2026-04-30"
+      },
+      {
+        "month": "2026-06",
+        "equity_weight": 0.5,
+        "gross_return": -0.0005446023282018597,
+        "net_return": -0.0005549962939460352,
+        "turnover": 0.010393965744175504,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2026-05-29"
+      },
+      {
+        "month": "2026-07",
+        "equity_weight": 0.5,
+        "gross_return": -0.0017869508699794867,
+        "net_return": -0.0017885862846754854,
+        "turnover": 0.0016354146959986493,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2026-06-30"
+      },
+      {
+        "month": "2026-08",
+        "equity_weight": 0.5,
+        "gross_return": 0.016429448946019942,
+        "net_return": 0.016426865370677824,
+        "turnover": 0.0025835753421175056,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2026-07-31"
+      },
+      {
+        "month": "2026-09",
+        "equity_weight": 0.5,
+        "gross_return": -0.005723054534253258,
+        "net_return": -0.005729774939302741,
+        "turnover": 0.006720405049482903,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2026-08-31"
+      }
+    ],
+    "Fixed 50/50": [
+      {
+        "month": "2021-10",
+        "equity_weight": 0.5,
+        "gross_return": 0.02567435880887592,
+        "net_return": 0.02567435880887592,
+        "turnover": 0.0,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2021-09-30"
+      },
+      {
+        "month": "2021-11",
+        "equity_weight": 0.5,
+        "gross_return": -0.013184963229434854,
+        "net_return": -0.013197532333185675,
+        "turnover": 0.012569103750820876,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2021-10-29"
+      },
+      {
+        "month": "2021-12",
+        "equity_weight": 0.5,
+        "gross_return": 0.01902966669292594,
+        "net_return": 0.019023097008636327,
+        "turnover": 0.006569684289613298,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2021-11-30"
+      },
+      {
+        "month": "2022-01",
+        "equity_weight": 0.5,
+        "gross_return": -0.022898520769198738,
+        "net_return": -0.02290785791968361,
+        "turnover": 0.009337150484874046,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2021-12-31"
+      },
+      {
+        "month": "2022-02",
+        "equity_weight": 0.5,
+        "gross_return": -0.013961705778437472,
+        "net_return": -0.013973423353968738,
+        "turnover": 0.011717575531266677,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-01-31"
+      },
+      {
+        "month": "2022-03",
+        "equity_weight": 0.5,
+        "gross_return": 0.009657042513052438,
+        "net_return": 0.009650073654923663,
+        "turnover": 0.006968858128775568,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-02-28"
+      },
+      {
+        "month": "2022-04",
+        "equity_weight": 0.5,
+        "gross_return": -0.040532652231310085,
+        "net_return": -0.04053720695347961,
+        "turnover": 0.004554722169520908,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-03-31"
+      },
+      {
+        "month": "2022-05",
+        "equity_weight": 0.5,
+        "gross_return": 0.0026347465930083303,
+        "net_return": 0.002613681214394828,
+        "turnover": 0.021065378613502495,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-04-29"
+      },
+      {
+        "month": "2022-06",
+        "equity_weight": 0.5,
+        "gross_return": -0.04022033553532545,
+        "net_return": -0.040221485861211825,
+        "turnover": 0.001150325886380199,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-05-31"
+      },
+      {
+        "month": "2022-07",
+        "equity_weight": 0.5,
+        "gross_return": 0.03509973297129099,
+        "net_return": 0.035078375436989176,
+        "turnover": 0.0213575343018112,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-06-30"
+      },
+      {
+        "month": "2022-08",
+        "equity_weight": 0.5,
+        "gross_return": -0.01929412975661271,
+        "net_return": -0.019310910078726318,
+        "turnover": 0.016780322113607582,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-07-29"
+      },
+      {
+        "month": "2022-09",
+        "equity_weight": 0.5,
+        "gross_return": -0.04661123513671139,
+        "net_return": -0.046622059848529664,
+        "turnover": 0.010824711818268773,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-08-31"
+      },
+      {
+        "month": "2022-10",
+        "equity_weight": 0.5,
+        "gross_return": 0.032676740587248565,
+        "net_return": 0.0326512115677025,
+        "turnover": 0.025529019546063403,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-09-30"
+      },
+      {
+        "month": "2022-11",
+        "equity_weight": 0.5,
+        "gross_return": 0.042989153286481674,
+        "net_return": 0.04297409969756723,
+        "turnover": 0.01505358891444497,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-10-31"
+      },
+      {
+        "month": "2022-12",
+        "equity_weight": 0.5,
+        "gross_return": -0.020373876817783243,
+        "net_return": -0.02039297466263194,
+        "turnover": 0.0190978448486957,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-11-30"
+      },
+      {
+        "month": "2023-01",
+        "equity_weight": 0.5,
+        "gross_return": 0.03965072080715304,
+        "net_return": 0.039638471278124435,
+        "turnover": 0.012249529028603823,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2022-12-30"
+      },
+      {
+        "month": "2023-02",
+        "equity_weight": 0.5,
+        "gross_return": -0.014169007772090403,
+        "net_return": -0.014186709941993097,
+        "turnover": 0.01770216990269413,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-01-31"
+      },
+      {
+        "month": "2023-03",
+        "equity_weight": 0.5,
+        "gross_return": 0.01624651467324778,
+        "net_return": 0.016237574818340806,
+        "turnover": 0.008939854906974742,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-02-28"
+      },
+      {
+        "month": "2023-04",
+        "equity_weight": 0.5,
+        "gross_return": 0.0089277032337991,
+        "net_return": 0.008921673626175701,
+        "turnover": 0.0060296076233991025,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-03-31"
+      },
+      {
+        "month": "2023-05",
+        "equity_weight": 0.5,
+        "gross_return": -0.00417324985886669,
+        "net_return": -0.004175875156743111,
+        "turnover": 0.00262529787642074,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-04-28"
+      },
+      {
+        "month": "2023-06",
+        "equity_weight": 0.5,
+        "gross_return": 0.031342679877842006,
+        "net_return": 0.03133870061611945,
+        "turnover": 0.003979261722551974,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-05-31"
+      },
+      {
+        "month": "2023-07",
+        "equity_weight": 0.5,
+        "gross_return": 0.02054213867931587,
+        "net_return": 0.020529176450800952,
+        "turnover": 0.012962228514916463,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-06-30"
+      },
+      {
+        "month": "2023-08",
+        "equity_weight": 0.5,
+        "gross_return": -0.011732573393416823,
+        "net_return": -0.011740746446145908,
+        "turnover": 0.008173052729085528,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-07-31"
+      },
+      {
+        "month": "2023-09",
+        "equity_weight": 0.5,
+        "gross_return": -0.0192783636526368,
+        "net_return": -0.019286812520921674,
+        "turnover": 0.008448868284874178,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-08-31"
+      },
+      {
+        "month": "2023-10",
+        "equity_weight": 0.5,
+        "gross_return": -0.012440775366615586,
+        "net_return": -0.012452638796517377,
+        "turnover": 0.011863429901790457,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-09-29"
+      },
+      {
+        "month": "2023-11",
+        "equity_weight": 0.5,
+        "gross_return": 0.047388794900543596,
+        "net_return": 0.04738031431795462,
+        "turnover": 0.008480582588976548,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-10-31"
+      },
+      {
+        "month": "2023-12",
+        "equity_weight": 0.5,
+        "gross_return": 0.02792492301217253,
+        "net_return": 0.02790453591928081,
+        "turnover": 0.020387092891721914,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-11-30"
+      },
+      {
+        "month": "2024-01",
+        "equity_weight": 0.5,
+        "gross_return": 0.0021337049043763656,
+        "net_return": 0.002122201071710982,
+        "turnover": 0.011503832665383462,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2023-12-29"
+      },
+      {
+        "month": "2024-02",
+        "equity_weight": 0.5,
+        "gross_return": 0.024675114229747663,
+        "net_return": 0.02467404964879707,
+        "turnover": 0.0010645809505928083,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-01-31"
+      },
+      {
+        "month": "2024-03",
+        "equity_weight": 0.5,
+        "gross_return": 0.017996292279153225,
+        "net_return": 0.017986420061560753,
+        "turnover": 0.00987221759247403,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-02-29"
+      },
+      {
+        "month": "2024-04",
+        "equity_weight": 0.5,
+        "gross_return": -0.015757418797599954,
+        "net_return": -0.015764243337319406,
+        "turnover": 0.006824539719453071,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-03-28"
+      },
+      {
+        "month": "2024-05",
+        "equity_weight": 0.5,
+        "gross_return": 0.02528252237820805,
+        "net_return": 0.025272321918663274,
+        "turnover": 0.01020045954477472,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-04-30"
+      },
+      {
+        "month": "2024-06",
+        "equity_weight": 0.5,
+        "gross_return": 0.009926508952504909,
+        "net_return": 0.009916409559211676,
+        "turnover": 0.010099393293232173,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-05-31"
+      },
+      {
+        "month": "2024-07",
+        "equity_weight": 0.5,
+        "gross_return": 0.012153864881722765,
+        "net_return": 0.012150927171406468,
+        "turnover": 0.002937710316297082,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-06-28"
+      },
+      {
+        "month": "2024-08",
+        "equity_weight": 0.5,
+        "gross_return": 0.013974926318286451,
+        "net_return": 0.013971149455581937,
+        "turnover": 0.0037768627045150494,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-07-31"
+      },
+      {
+        "month": "2024-09",
+        "equity_weight": 0.5,
+        "gross_return": 0.01309366394439504,
+        "net_return": 0.013089049515328287,
+        "turnover": 0.004614429066751913,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-08-30"
+      },
+      {
+        "month": "2024-10",
+        "equity_weight": 0.5,
+        "gross_return": -0.008928235808080442,
+        "net_return": -0.008932614200149264,
+        "turnover": 0.0043783920688204025,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-09-30"
+      },
+      {
+        "month": "2024-11",
+        "equity_weight": 0.5,
+        "gross_return": 0.022564157021993214,
+        "net_return": 0.022557660851205946,
+        "turnover": 0.006496170787269218,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-10-31"
+      },
+      {
+        "month": "2024-12",
+        "equity_weight": 0.5,
+        "gross_return": -0.012666331831085897,
+        "net_return": -0.012675552305576843,
+        "turnover": 0.009220474490946096,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-11-29"
+      },
+      {
+        "month": "2025-01",
+        "equity_weight": 0.5,
+        "gross_return": 0.01702927431638246,
+        "net_return": 0.017020818451871114,
+        "turnover": 0.008455864511347111,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2024-12-31"
+      },
+      {
+        "month": "2025-02",
+        "equity_weight": 0.5,
+        "gross_return": -0.00044608283318947617,
+        "net_return": -0.000452734122696355,
+        "turnover": 0.006651289506878877,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-01-31"
+      },
+      {
+        "month": "2025-03",
+        "equity_weight": 0.5,
+        "gross_return": -0.015953247915669544,
+        "net_return": -0.015955090574075563,
+        "turnover": 0.0018426584060194928,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-02-28"
+      },
+      {
+        "month": "2025-04",
+        "equity_weight": 0.5,
+        "gross_return": 0.004503917627803666,
+        "net_return": 0.004494149988110416,
+        "turnover": 0.00976763969325023,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-03-31"
+      },
+      {
+        "month": "2025-05",
+        "equity_weight": 0.5,
+        "gross_return": 0.030846988256400865,
+        "net_return": 0.0308464397477976,
+        "turnover": 0.0005485086032618325,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-04-30"
+      },
+      {
+        "month": "2025-06",
+        "equity_weight": 0.5,
+        "gross_return": 0.025039374724769914,
+        "net_return": 0.025026174530059325,
+        "turnover": 0.013200194710589863,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-05-30"
+      },
+      {
+        "month": "2025-07",
+        "equity_weight": 0.5,
+        "gross_return": 0.007268455146524744,
+        "net_return": 0.007257873984301304,
+        "turnover": 0.010581162223439744,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-06-30"
+      },
+      {
+        "month": "2025-08",
+        "equity_weight": 0.5,
+        "gross_return": 0.016630903963274157,
+        "net_return": 0.016629065974393967,
+        "turnover": 0.0018379888801898225,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-07-31"
+      },
+      {
+        "month": "2025-09",
+        "equity_weight": 0.5,
+        "gross_return": 0.01850782145311647,
+        "net_return": 0.0185014654716304,
+        "turnover": 0.00635598148606753,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-08-29"
+      },
+      {
+        "month": "2025-10",
+        "equity_weight": 0.5,
+        "gross_return": 0.01187865077039918,
+        "net_return": 0.01187118623742842,
+        "turnover": 0.007464532970759996,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-09-30"
+      },
+      {
+        "month": "2025-11",
+        "equity_weight": 0.5,
+        "gross_return": 0.002504752885187589,
+        "net_return": 0.0025006179754040107,
+        "turnover": 0.004134909783578111,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-10-31"
+      },
+      {
+        "month": "2025-12",
+        "equity_weight": 0.5,
+        "gross_return": 0.006285606892675766,
+        "net_return": 0.006285421896628292,
+        "turnover": 0.0001849960474737955,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-11-28"
+      },
+      {
+        "month": "2026-01",
+        "equity_weight": 0.5,
+        "gross_return": 0.017038018222504725,
+        "net_return": 0.017036560597192798,
+        "turnover": 0.0014576253119262805,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2025-12-31"
+      },
+      {
+        "month": "2026-02",
+        "equity_weight": 0.5,
+        "gross_return": 0.00955108714741515,
+        "net_return": 0.009544163362183309,
+        "turnover": 0.006923785231839674,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2026-01-30"
+      },
+      {
+        "month": "2026-03",
+        "equity_weight": 0.5,
+        "gross_return": -0.02965909940594036,
+        "net_return": -0.02966250716659287,
+        "turnover": 0.0034077606525084736,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2026-02-27"
+      },
+      {
+        "month": "2026-04",
+        "equity_weight": 0.5,
+        "gross_return": 0.04800319398809316,
+        "net_return": 0.047986428128439285,
+        "turnover": 0.01676585965387728,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2026-03-31"
+      },
+      {
+        "month": "2026-05",
+        "equity_weight": 0.5,
+        "gross_return": 0.024470593898107573,
+        "net_return": 0.024449070069431558,
+        "turnover": 0.0215238286760141,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2026-04-30"
+      },
+      {
+        "month": "2026-06",
+        "equity_weight": 0.5,
+        "gross_return": -0.0005446023282018597,
+        "net_return": -0.0005549962939460352,
+        "turnover": 0.010393965744175504,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2026-05-29"
+      },
+      {
+        "month": "2026-07",
+        "equity_weight": 0.5,
+        "gross_return": -0.0017869508699794867,
+        "net_return": -0.0017885862846754854,
+        "turnover": 0.0016354146959986493,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2026-06-30"
+      },
+      {
+        "month": "2026-08",
+        "equity_weight": 0.5,
+        "gross_return": 0.016429448946019942,
+        "net_return": 0.016426865370677824,
+        "turnover": 0.0025835753421175056,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2026-07-31"
+      },
+      {
+        "month": "2026-09",
+        "equity_weight": 0.5,
+        "gross_return": -0.005723054534253258,
+        "net_return": -0.005729774939302741,
+        "turnover": 0.006720405049482903,
+        "target": 0.5,
+        "cap_limited": false,
+        "decision_date": "2026-08-31"
+      }
+    ],
+    "VT buy-and-hold reference": [
+      {
+        "month": "2021-10",
+        "equity_weight": 1.0,
+        "gross_return": 0.05145797366972671,
+        "net_return": 0.05145797366972671,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2021-09-30"
+      },
+      {
+        "month": "2021-11",
+        "equity_weight": 1.0,
+        "gross_return": -0.02615108971708635,
+        "net_return": -0.02615108971708635,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2021-10-29"
+      },
+      {
+        "month": "2021-12",
+        "equity_weight": 1.0,
+        "gross_return": 0.03805933338585166,
+        "net_return": 0.03805933338585166,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2021-11-30"
+      },
+      {
+        "month": "2022-01",
+        "equity_weight": 1.0,
+        "gross_return": -0.045797041538397365,
+        "net_return": -0.045797041538397365,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2021-12-31"
+      },
+      {
+        "month": "2022-02",
+        "equity_weight": 1.0,
+        "gross_return": -0.02770482774237737,
+        "net_return": -0.02770482774237737,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2022-01-31"
+      },
+      {
+        "month": "2022-03",
+        "equity_weight": 1.0,
+        "gross_return": 0.01885445714334666,
+        "net_return": 0.01885445714334666,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2022-02-28"
+      },
+      {
+        "month": "2022-04",
+        "equity_weight": 1.0,
+        "gross_return": -0.0809557381273911,
+        "net_return": -0.0809557381273911,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2022-03-31"
+      },
+      {
+        "month": "2022-05",
+        "equity_weight": 1.0,
+        "gross_return": 0.004941460000188691,
+        "net_return": 0.004941460000188691,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2022-04-29"
+      },
+      {
+        "month": "2022-06",
+        "equity_weight": 1.0,
+        "gross_return": -0.08121738974729575,
+        "net_return": -0.08121738974729575,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2022-05-31"
+      },
+      {
+        "month": "2022-07",
+        "equity_weight": 1.0,
+        "gross_return": 0.06983834684922585,
+        "net_return": 0.06983834684922585,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2022-06-30"
+      },
+      {
+        "month": "2022-08",
+        "equity_weight": 1.0,
+        "gross_return": -0.04052584660435099,
+        "net_return": -0.04052584660435099,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2022-07-29"
+      },
+      {
+        "month": "2022-09",
+        "equity_weight": 1.0,
+        "gross_return": -0.09528939596309571,
+        "net_return": -0.09528939596309571,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2022-08-31"
+      },
+      {
+        "month": "2022-10",
+        "equity_weight": 1.0,
+        "gross_return": 0.06376772285586729,
+        "net_return": 0.06376772285586729,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2022-09-30"
+      },
+      {
+        "month": "2022-11",
+        "equity_weight": 1.0,
+        "gross_return": 0.08282684334315715,
+        "net_return": 0.08282684334315715,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2022-10-31"
+      },
+      {
+        "month": "2022-12",
+        "equity_weight": 1.0,
+        "gross_return": -0.044373794083981566,
+        "net_return": -0.044373794083981566,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2022-11-30"
+      },
+      {
+        "month": "2023-01",
+        "equity_weight": 1.0,
+        "gross_return": 0.07645886820552628,
+        "net_return": 0.07645886820552628,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2022-12-30"
+      },
+      {
+        "month": "2023-02",
+        "equity_weight": 1.0,
+        "gross_return": -0.03179537983872327,
+        "net_return": -0.03179537983872327,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2023-01-31"
+      },
+      {
+        "month": "2023-03",
+        "equity_weight": 1.0,
+        "gross_return": 0.028501650137500834,
+        "net_return": 0.028501650137500834,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2023-02-28"
+      },
+      {
+        "month": "2023-04",
+        "equity_weight": 1.0,
+        "gross_return": 0.014225174747322544,
+        "net_return": 0.014225174747322544,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2023-03-31"
+      },
+      {
+        "month": "2023-05",
+        "equity_weight": 1.0,
+        "gross_return": -0.012098560397126534,
+        "net_return": -0.012098560397126534,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2023-04-28"
+      },
+      {
+        "month": "2023-06",
+        "equity_weight": 1.0,
+        "gross_return": 0.05807967886536791,
+        "net_return": 0.05807967886536791,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2023-05-31"
+      },
+      {
+        "month": "2023-07",
+        "equity_weight": 1.0,
+        "gross_return": 0.037224028102675444,
+        "net_return": 0.037224028102675444,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2023-06-30"
+      },
+      {
+        "month": "2023-08",
+        "equity_weight": 1.0,
+        "gross_return": -0.028432056028677932,
+        "net_return": -0.028432056028677932,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2023-07-31"
+      },
+      {
+        "month": "2023-09",
+        "equity_weight": 1.0,
+        "gross_return": -0.04254780842458916,
+        "net_return": -0.04254780842458916,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2023-08-31"
+      },
+      {
+        "month": "2023-10",
+        "equity_weight": 1.0,
+        "gross_return": -0.02919093049863375,
+        "net_return": -0.02919093049863375,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2023-09-29"
+      },
+      {
+        "month": "2023-11",
+        "equity_weight": 1.0,
+        "gross_return": 0.09009522021131566,
+        "net_return": 0.09009522021131566,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2023-10-31"
+      },
+      {
+        "month": "2023-12",
+        "equity_weight": 1.0,
+        "gross_return": 0.05157507562599095,
+        "net_return": 0.05157507562599095,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2023-11-30"
+      },
+      {
+        "month": "2024-01",
+        "equity_weight": 1.0,
+        "gross_return": 0.0,
+        "net_return": 0.0,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2023-12-29"
+      },
+      {
+        "month": "2024-02",
+        "equity_weight": 1.0,
+        "gross_return": 0.044906745608286114,
+        "net_return": 0.044906745608286114,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2024-01-31"
+      },
+      {
+        "month": "2024-03",
+        "equity_weight": 1.0,
+        "gross_return": 0.03189100454098326,
+        "net_return": 0.03189100454098326,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2024-02-29"
+      },
+      {
+        "month": "2024-04",
+        "equity_weight": 1.0,
+        "gross_return": -0.035836872061199454,
+        "net_return": -0.035836872061199454,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2024-03-28"
+      },
+      {
+        "month": "2024-05",
+        "equity_weight": 1.0,
+        "gross_return": 0.0459919852385573,
+        "net_return": 0.0459919852385573,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2024-04-30"
+      },
+      {
+        "month": "2024-06",
+        "equity_weight": 1.0,
+        "gross_return": 0.015860252000608144,
+        "net_return": 0.015860252000608144,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2024-05-31"
+      },
+      {
+        "month": "2024-07",
+        "equity_weight": 1.0,
+        "gross_return": 0.019799397248727812,
+        "net_return": 0.019799397248727812,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2024-06-28"
+      },
+      {
+        "month": "2024-08",
+        "equity_weight": 1.0,
+        "gross_return": 0.0233327570642079,
+        "net_return": 0.0233327570642079,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2024-07-31"
+      },
+      {
+        "month": "2024-09",
+        "equity_weight": 1.0,
+        "gross_return": 0.02196510647076777,
+        "net_return": 0.02196510647076777,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2024-08-30"
+      },
+      {
+        "month": "2024-10",
+        "equity_weight": 1.0,
+        "gross_return": -0.02180457869334229,
+        "net_return": -0.02180457869334229,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2024-09-30"
+      },
+      {
+        "month": "2024-11",
+        "equity_weight": 1.0,
+        "gross_return": 0.04142121047234748,
+        "net_return": 0.04142121047234748,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2024-10-31"
+      },
+      {
+        "month": "2024-12",
+        "equity_weight": 1.0,
+        "gross_return": -0.02936385128214125,
+        "net_return": -0.02936385128214125,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2024-11-29"
+      },
+      {
+        "month": "2025-01",
+        "equity_weight": 1.0,
+        "gross_return": 0.03055838659728094,
+        "net_return": 0.03055838659728094,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2024-12-31"
+      },
+      {
+        "month": "2025-02",
+        "equity_weight": 1.0,
+        "gross_return": -0.004129755688663694,
+        "net_return": -0.004129755688663694,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2025-01-31"
+      },
+      {
+        "month": "2025-03",
+        "equity_weight": 1.0,
+        "gross_return": -0.03517687614701526,
+        "net_return": -0.03517687614701526,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2025-02-28"
+      },
+      {
+        "month": "2025-04",
+        "equity_weight": 1.0,
+        "gross_return": 0.005605875709461694,
+        "net_return": 0.005605875709461694,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2025-03-31"
+      },
+      {
+        "month": "2025-05",
+        "equity_weight": 1.0,
+        "gross_return": 0.058061750180020244,
+        "net_return": 0.058061750180020244,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2025-04-30"
+      },
+      {
+        "month": "2025-06",
+        "equity_weight": 1.0,
+        "gross_return": 0.04673159054352194,
+        "net_return": 0.04673159054352194,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2025-05-30"
+      },
+      {
+        "month": "2025-07",
+        "equity_weight": 1.0,
+        "gross_return": 0.010971151586375294,
+        "net_return": 0.010971151586375294,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2025-06-30"
+      },
+      {
+        "month": "2025-08",
+        "equity_weight": 1.0,
+        "gross_return": 0.029554278370783393,
+        "net_return": 0.029554278370783393,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2025-07-31"
+      },
+      {
+        "month": "2025-09",
+        "equity_weight": 1.0,
+        "gross_return": 0.03371319188154387,
+        "net_return": 0.03371319188154387,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2025-08-29"
+      },
+      {
+        "month": "2025-10",
+        "equity_weight": 1.0,
+        "gross_return": 0.020246704636127877,
+        "net_return": 0.020246704636127877,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2025-09-30"
+      },
+      {
+        "month": "2025-11",
+        "equity_weight": 1.0,
+        "gross_return": 0.002133834051472716,
+        "net_return": 0.002133834051472716,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2025-10-31"
+      },
+      {
+        "month": "2025-12",
+        "equity_weight": 1.0,
+        "gross_return": 0.009219181635943485,
+        "net_return": 0.009219181635943485,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2025-11-28"
+      },
+      {
+        "month": "2026-01",
+        "equity_weight": 1.0,
+        "gross_return": 0.031121523844081622,
+        "net_return": 0.031121523844081622,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2025-12-31"
+      },
+      {
+        "month": "2026-02",
+        "equity_weight": 1.0,
+        "gross_return": 0.016431704090371424,
+        "net_return": 0.016431704090371424,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2026-01-30"
+      },
+      {
+        "month": "2026-03",
+        "equity_weight": 1.0,
+        "gross_return": -0.062196298117494164,
+        "net_return": -0.062196298117494164,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2026-02-27"
+      },
+      {
+        "month": "2026-04",
+        "equity_weight": 1.0,
+        "gross_return": 0.09311727638672362,
+        "net_return": 0.09311727638672362,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2026-03-31"
+      },
+      {
+        "month": "2026-05",
+        "equity_weight": 1.0,
+        "gross_return": 0.04576721841589171,
+        "net_return": 0.04576721841589171,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2026-04-30"
+      },
+      {
+        "month": "2026-06",
+        "equity_weight": 1.0,
+        "gross_return": -0.003813650418897141,
+        "net_return": -0.003813650418897141,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2026-05-29"
+      },
+      {
+        "month": "2026-07",
+        "equity_weight": 1.0,
+        "gross_return": -0.006944868109803992,
+        "net_return": -0.006944868109803992,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2026-06-30"
+      },
+      {
+        "month": "2026-08",
+        "equity_weight": 1.0,
+        "gross_return": 0.03009108414829975,
+        "net_return": 0.03009108414829975,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2026-07-31"
+      },
+      {
+        "month": "2026-09",
+        "equity_weight": 1.0,
+        "gross_return": -0.014291304802012461,
+        "net_return": -0.014291304802012461,
+        "turnover": 0,
+        "target": null,
+        "cap_limited": false,
+        "decision_date": "2026-08-31"
+      }
+    ]
+  },
+  "vintage_audit": [
+    {
+      "return_month": "2021-10",
+      "trade_date": "2021-09-30",
+      "cutoff": "2021-09-29",
+      "rate_pair": {
+        "requested_as_of": "2021-09-29",
+        "effective_vintage": "2021-09-29",
+        "latest_month": "2021-08-01",
+        "latest_value": "0.09",
+        "prior_month": "2021-05-01",
+        "prior_value": "0.06"
+      }
+    },
+    {
+      "return_month": "2021-11",
+      "trade_date": "2021-10-29",
+      "cutoff": "2021-10-28",
+      "rate_pair": {
+        "requested_as_of": "2021-10-28",
+        "effective_vintage": "2021-10-28",
+        "latest_month": "2021-09-01",
+        "latest_value": "0.08",
+        "prior_month": "2021-06-01",
+        "prior_value": "0.08"
+      }
+    },
+    {
+      "return_month": "2021-12",
+      "trade_date": "2021-11-30",
+      "cutoff": "2021-11-29",
+      "rate_pair": {
+        "requested_as_of": "2021-11-29",
+        "effective_vintage": "2021-11-29",
+        "latest_month": "2021-10-01",
+        "latest_value": "0.08",
+        "prior_month": "2021-07-01",
+        "prior_value": "0.10"
+      }
+    },
+    {
+      "return_month": "2022-01",
+      "trade_date": "2021-12-31",
+      "cutoff": "2021-12-30",
+      "rate_pair": {
+        "requested_as_of": "2021-12-30",
+        "effective_vintage": "2021-12-30",
+        "latest_month": "2021-11-01",
+        "latest_value": "0.08",
+        "prior_month": "2021-08-01",
+        "prior_value": "0.09"
+      }
+    },
+    {
+      "return_month": "2022-02",
+      "trade_date": "2022-01-31",
+      "cutoff": "2022-01-30",
+      "rate_pair": {
+        "requested_as_of": "2022-01-30",
+        "effective_vintage": "2022-01-30",
+        "latest_month": "2021-12-01",
+        "latest_value": "0.08",
+        "prior_month": "2021-09-01",
+        "prior_value": "0.08"
+      }
+    },
+    {
+      "return_month": "2022-03",
+      "trade_date": "2022-02-28",
+      "cutoff": "2022-02-27",
+      "rate_pair": {
+        "requested_as_of": "2022-02-27",
+        "effective_vintage": "2022-02-27",
+        "latest_month": "2022-01-01",
+        "latest_value": "0.08",
+        "prior_month": "2021-10-01",
+        "prior_value": "0.08"
+      }
+    },
+    {
+      "return_month": "2022-04",
+      "trade_date": "2022-03-31",
+      "cutoff": "2022-03-30",
+      "rate_pair": {
+        "requested_as_of": "2022-03-30",
+        "effective_vintage": "2022-03-30",
+        "latest_month": "2022-02-01",
+        "latest_value": "0.08",
+        "prior_month": "2021-11-01",
+        "prior_value": "0.08"
+      }
+    },
+    {
+      "return_month": "2022-05",
+      "trade_date": "2022-04-29",
+      "cutoff": "2022-04-28",
+      "rate_pair": {
+        "requested_as_of": "2022-04-28",
+        "effective_vintage": "2022-04-28",
+        "latest_month": "2022-03-01",
+        "latest_value": "0.20",
+        "prior_month": "2021-12-01",
+        "prior_value": "0.08"
+      }
+    },
+    {
+      "return_month": "2022-06",
+      "trade_date": "2022-05-31",
+      "cutoff": "2022-05-30",
+      "rate_pair": {
+        "requested_as_of": "2022-05-30",
+        "effective_vintage": "2022-05-30",
+        "latest_month": "2022-04-01",
+        "latest_value": "0.33",
+        "prior_month": "2022-01-01",
+        "prior_value": "0.08"
+      }
+    },
+    {
+      "return_month": "2022-07",
+      "trade_date": "2022-06-30",
+      "cutoff": "2022-06-29",
+      "rate_pair": {
+        "requested_as_of": "2022-06-29",
+        "effective_vintage": "2022-06-29",
+        "latest_month": "2022-05-01",
+        "latest_value": "0.77",
+        "prior_month": "2022-02-01",
+        "prior_value": "0.08"
+      }
+    },
+    {
+      "return_month": "2022-08",
+      "trade_date": "2022-07-29",
+      "cutoff": "2022-07-28",
+      "rate_pair": {
+        "requested_as_of": "2022-07-28",
+        "effective_vintage": "2022-07-28",
+        "latest_month": "2022-06-01",
+        "latest_value": "1.21",
+        "prior_month": "2022-03-01",
+        "prior_value": "0.20"
+      }
+    },
+    {
+      "return_month": "2022-09",
+      "trade_date": "2022-08-31",
+      "cutoff": "2022-08-30",
+      "rate_pair": {
+        "requested_as_of": "2022-08-30",
+        "effective_vintage": "2022-08-30",
+        "latest_month": "2022-07-01",
+        "latest_value": "1.68",
+        "prior_month": "2022-04-01",
+        "prior_value": "0.33"
+      }
+    },
+    {
+      "return_month": "2022-10",
+      "trade_date": "2022-09-30",
+      "cutoff": "2022-09-29",
+      "rate_pair": {
+        "requested_as_of": "2022-09-29",
+        "effective_vintage": "2022-09-29",
+        "latest_month": "2022-08-01",
+        "latest_value": "2.33",
+        "prior_month": "2022-05-01",
+        "prior_value": "0.77"
+      }
+    },
+    {
+      "return_month": "2022-11",
+      "trade_date": "2022-10-31",
+      "cutoff": "2022-10-30",
+      "rate_pair": {
+        "requested_as_of": "2022-10-30",
+        "effective_vintage": "2022-10-30",
+        "latest_month": "2022-09-01",
+        "latest_value": "2.56",
+        "prior_month": "2022-06-01",
+        "prior_value": "1.21"
+      }
+    },
+    {
+      "return_month": "2022-12",
+      "trade_date": "2022-11-30",
+      "cutoff": "2022-11-29",
+      "rate_pair": {
+        "requested_as_of": "2022-11-29",
+        "effective_vintage": "2022-11-29",
+        "latest_month": "2022-10-01",
+        "latest_value": "3.08",
+        "prior_month": "2022-07-01",
+        "prior_value": "1.68"
+      }
+    },
+    {
+      "return_month": "2023-01",
+      "trade_date": "2022-12-30",
+      "cutoff": "2022-12-29",
+      "rate_pair": {
+        "requested_as_of": "2022-12-29",
+        "effective_vintage": "2022-12-29",
+        "latest_month": "2022-11-01",
+        "latest_value": "3.78",
+        "prior_month": "2022-08-01",
+        "prior_value": "2.33"
+      }
+    },
+    {
+      "return_month": "2023-02",
+      "trade_date": "2023-01-31",
+      "cutoff": "2023-01-30",
+      "rate_pair": {
+        "requested_as_of": "2023-01-30",
+        "effective_vintage": "2023-01-30",
+        "latest_month": "2022-12-01",
+        "latest_value": "4.10",
+        "prior_month": "2022-09-01",
+        "prior_value": "2.56"
+      }
+    },
+    {
+      "return_month": "2023-03",
+      "trade_date": "2023-02-28",
+      "cutoff": "2023-02-27",
+      "rate_pair": {
+        "requested_as_of": "2023-02-27",
+        "effective_vintage": "2023-02-27",
+        "latest_month": "2023-01-01",
+        "latest_value": "4.33",
+        "prior_month": "2022-10-01",
+        "prior_value": "3.08"
+      }
+    },
+    {
+      "return_month": "2023-04",
+      "trade_date": "2023-03-31",
+      "cutoff": "2023-03-30",
+      "rate_pair": {
+        "requested_as_of": "2023-03-30",
+        "effective_vintage": "2023-03-30",
+        "latest_month": "2023-02-01",
+        "latest_value": "4.57",
+        "prior_month": "2022-11-01",
+        "prior_value": "3.78"
+      }
+    },
+    {
+      "return_month": "2023-05",
+      "trade_date": "2023-04-28",
+      "cutoff": "2023-04-27",
+      "rate_pair": {
+        "requested_as_of": "2023-04-27",
+        "effective_vintage": "2023-04-27",
+        "latest_month": "2023-03-01",
+        "latest_value": "4.65",
+        "prior_month": "2022-12-01",
+        "prior_value": "4.10"
+      }
+    },
+    {
+      "return_month": "2023-06",
+      "trade_date": "2023-05-31",
+      "cutoff": "2023-05-30",
+      "rate_pair": {
+        "requested_as_of": "2023-05-30",
+        "effective_vintage": "2023-05-30",
+        "latest_month": "2023-04-01",
+        "latest_value": "4.83",
+        "prior_month": "2023-01-01",
+        "prior_value": "4.33"
+      }
+    },
+    {
+      "return_month": "2023-07",
+      "trade_date": "2023-06-30",
+      "cutoff": "2023-06-29",
+      "rate_pair": {
+        "requested_as_of": "2023-06-29",
+        "effective_vintage": "2023-06-29",
+        "latest_month": "2023-05-01",
+        "latest_value": "5.06",
+        "prior_month": "2023-02-01",
+        "prior_value": "4.57"
+      }
+    },
+    {
+      "return_month": "2023-08",
+      "trade_date": "2023-07-31",
+      "cutoff": "2023-07-30",
+      "rate_pair": {
+        "requested_as_of": "2023-07-30",
+        "effective_vintage": "2023-07-30",
+        "latest_month": "2023-06-01",
+        "latest_value": "5.08",
+        "prior_month": "2023-03-01",
+        "prior_value": "4.65"
+      }
+    },
+    {
+      "return_month": "2023-09",
+      "trade_date": "2023-08-31",
+      "cutoff": "2023-08-30",
+      "rate_pair": {
+        "requested_as_of": "2023-08-30",
+        "effective_vintage": "2023-08-30",
+        "latest_month": "2023-07-01",
+        "latest_value": "5.12",
+        "prior_month": "2023-04-01",
+        "prior_value": "4.83"
+      }
+    },
+    {
+      "return_month": "2023-10",
+      "trade_date": "2023-09-29",
+      "cutoff": "2023-09-28",
+      "rate_pair": {
+        "requested_as_of": "2023-09-28",
+        "effective_vintage": "2023-09-28",
+        "latest_month": "2023-08-01",
+        "latest_value": "5.33",
+        "prior_month": "2023-05-01",
+        "prior_value": "5.06"
+      }
+    },
+    {
+      "return_month": "2023-11",
+      "trade_date": "2023-10-31",
+      "cutoff": "2023-10-30",
+      "rate_pair": {
+        "requested_as_of": "2023-10-30",
+        "effective_vintage": "2023-10-30",
+        "latest_month": "2023-09-01",
+        "latest_value": "5.33",
+        "prior_month": "2023-06-01",
+        "prior_value": "5.08"
+      }
+    },
+    {
+      "return_month": "2023-12",
+      "trade_date": "2023-11-30",
+      "cutoff": "2023-11-29",
+      "rate_pair": {
+        "requested_as_of": "2023-11-29",
+        "effective_vintage": "2023-11-29",
+        "latest_month": "2023-10-01",
+        "latest_value": "5.33",
+        "prior_month": "2023-07-01",
+        "prior_value": "5.12"
+      }
+    },
+    {
+      "return_month": "2024-01",
+      "trade_date": "2023-12-29",
+      "cutoff": "2023-12-28",
+      "rate_pair": {
+        "requested_as_of": "2023-12-28",
+        "effective_vintage": "2023-12-28",
+        "latest_month": "2023-11-01",
+        "latest_value": "5.33",
+        "prior_month": "2023-08-01",
+        "prior_value": "5.33"
+      }
+    },
+    {
+      "return_month": "2024-02",
+      "trade_date": "2024-01-31",
+      "cutoff": "2024-01-30",
+      "rate_pair": {
+        "requested_as_of": "2024-01-30",
+        "effective_vintage": "2024-01-30",
+        "latest_month": "2023-12-01",
+        "latest_value": "5.33",
+        "prior_month": "2023-09-01",
+        "prior_value": "5.33"
+      }
+    },
+    {
+      "return_month": "2024-03",
+      "trade_date": "2024-02-29",
+      "cutoff": "2024-02-28",
+      "rate_pair": {
+        "requested_as_of": "2024-02-28",
+        "effective_vintage": "2024-02-28",
+        "latest_month": "2024-01-01",
+        "latest_value": "5.33",
+        "prior_month": "2023-10-01",
+        "prior_value": "5.33"
+      }
+    },
+    {
+      "return_month": "2024-04",
+      "trade_date": "2024-03-28",
+      "cutoff": "2024-03-27",
+      "rate_pair": {
+        "requested_as_of": "2024-03-27",
+        "effective_vintage": "2024-03-27",
+        "latest_month": "2024-02-01",
+        "latest_value": "5.33",
+        "prior_month": "2023-11-01",
+        "prior_value": "5.33"
+      }
+    },
+    {
+      "return_month": "2024-05",
+      "trade_date": "2024-04-30",
+      "cutoff": "2024-04-29",
+      "rate_pair": {
+        "requested_as_of": "2024-04-29",
+        "effective_vintage": "2024-04-29",
+        "latest_month": "2024-03-01",
+        "latest_value": "5.33",
+        "prior_month": "2023-12-01",
+        "prior_value": "5.33"
+      }
+    },
+    {
+      "return_month": "2024-06",
+      "trade_date": "2024-05-31",
+      "cutoff": "2024-05-30",
+      "rate_pair": {
+        "requested_as_of": "2024-05-30",
+        "effective_vintage": "2024-05-30",
+        "latest_month": "2024-04-01",
+        "latest_value": "5.33",
+        "prior_month": "2024-01-01",
+        "prior_value": "5.33"
+      }
+    },
+    {
+      "return_month": "2024-07",
+      "trade_date": "2024-06-28",
+      "cutoff": "2024-06-27",
+      "rate_pair": {
+        "requested_as_of": "2024-06-27",
+        "effective_vintage": "2024-06-27",
+        "latest_month": "2024-05-01",
+        "latest_value": "5.33",
+        "prior_month": "2024-02-01",
+        "prior_value": "5.33"
+      }
+    },
+    {
+      "return_month": "2024-08",
+      "trade_date": "2024-07-31",
+      "cutoff": "2024-07-30",
+      "rate_pair": {
+        "requested_as_of": "2024-07-30",
+        "effective_vintage": "2024-07-30",
+        "latest_month": "2024-06-01",
+        "latest_value": "5.33",
+        "prior_month": "2024-03-01",
+        "prior_value": "5.33"
+      }
+    },
+    {
+      "return_month": "2024-09",
+      "trade_date": "2024-08-30",
+      "cutoff": "2024-08-29",
+      "rate_pair": {
+        "requested_as_of": "2024-08-29",
+        "effective_vintage": "2024-08-29",
+        "latest_month": "2024-07-01",
+        "latest_value": "5.33",
+        "prior_month": "2024-04-01",
+        "prior_value": "5.33"
+      }
+    },
+    {
+      "return_month": "2024-10",
+      "trade_date": "2024-09-30",
+      "cutoff": "2024-09-29",
+      "rate_pair": {
+        "requested_as_of": "2024-09-29",
+        "effective_vintage": "2024-09-29",
+        "latest_month": "2024-08-01",
+        "latest_value": "5.33",
+        "prior_month": "2024-05-01",
+        "prior_value": "5.33"
+      }
+    },
+    {
+      "return_month": "2024-11",
+      "trade_date": "2024-10-31",
+      "cutoff": "2024-10-30",
+      "rate_pair": {
+        "requested_as_of": "2024-10-30",
+        "effective_vintage": "2024-10-30",
+        "latest_month": "2024-09-01",
+        "latest_value": "5.13",
+        "prior_month": "2024-06-01",
+        "prior_value": "5.33"
+      }
+    },
+    {
+      "return_month": "2024-12",
+      "trade_date": "2024-11-29",
+      "cutoff": "2024-11-28",
+      "rate_pair": {
+        "requested_as_of": "2024-11-28",
+        "effective_vintage": "2024-11-28",
+        "latest_month": "2024-10-01",
+        "latest_value": "4.83",
+        "prior_month": "2024-07-01",
+        "prior_value": "5.33"
+      }
+    },
+    {
+      "return_month": "2025-01",
+      "trade_date": "2024-12-31",
+      "cutoff": "2024-12-30",
+      "rate_pair": {
+        "requested_as_of": "2024-12-30",
+        "effective_vintage": "2024-12-30",
+        "latest_month": "2024-11-01",
+        "latest_value": "4.64",
+        "prior_month": "2024-08-01",
+        "prior_value": "5.33"
+      }
+    },
+    {
+      "return_month": "2025-02",
+      "trade_date": "2025-01-31",
+      "cutoff": "2025-01-30",
+      "rate_pair": {
+        "requested_as_of": "2025-01-30",
+        "effective_vintage": "2025-01-30",
+        "latest_month": "2024-12-01",
+        "latest_value": "4.48",
+        "prior_month": "2024-09-01",
+        "prior_value": "5.13"
+      }
+    },
+    {
+      "return_month": "2025-03",
+      "trade_date": "2025-02-28",
+      "cutoff": "2025-02-27",
+      "rate_pair": {
+        "requested_as_of": "2025-02-27",
+        "effective_vintage": "2025-02-27",
+        "latest_month": "2025-01-01",
+        "latest_value": "4.33",
+        "prior_month": "2024-10-01",
+        "prior_value": "4.83"
+      }
+    },
+    {
+      "return_month": "2025-04",
+      "trade_date": "2025-03-31",
+      "cutoff": "2025-03-30",
+      "rate_pair": {
+        "requested_as_of": "2025-03-30",
+        "effective_vintage": "2025-03-30",
+        "latest_month": "2025-02-01",
+        "latest_value": "4.33",
+        "prior_month": "2024-11-01",
+        "prior_value": "4.64"
+      }
+    },
+    {
+      "return_month": "2025-05",
+      "trade_date": "2025-04-30",
+      "cutoff": "2025-04-29",
+      "rate_pair": {
+        "requested_as_of": "2025-04-29",
+        "effective_vintage": "2025-04-29",
+        "latest_month": "2025-03-01",
+        "latest_value": "4.33",
+        "prior_month": "2024-12-01",
+        "prior_value": "4.48"
+      }
+    },
+    {
+      "return_month": "2025-06",
+      "trade_date": "2025-05-30",
+      "cutoff": "2025-05-29",
+      "rate_pair": {
+        "requested_as_of": "2025-05-29",
+        "effective_vintage": "2025-05-29",
+        "latest_month": "2025-04-01",
+        "latest_value": "4.33",
+        "prior_month": "2025-01-01",
+        "prior_value": "4.33"
+      }
+    },
+    {
+      "return_month": "2025-07",
+      "trade_date": "2025-06-30",
+      "cutoff": "2025-06-29",
+      "rate_pair": {
+        "requested_as_of": "2025-06-29",
+        "effective_vintage": "2025-06-29",
+        "latest_month": "2025-05-01",
+        "latest_value": "4.33",
+        "prior_month": "2025-02-01",
+        "prior_value": "4.33"
+      }
+    },
+    {
+      "return_month": "2025-08",
+      "trade_date": "2025-07-31",
+      "cutoff": "2025-07-30",
+      "rate_pair": {
+        "requested_as_of": "2025-07-30",
+        "effective_vintage": "2025-07-30",
+        "latest_month": "2025-06-01",
+        "latest_value": "4.33",
+        "prior_month": "2025-03-01",
+        "prior_value": "4.33"
+      }
+    },
+    {
+      "return_month": "2025-09",
+      "trade_date": "2025-08-29",
+      "cutoff": "2025-08-28",
+      "rate_pair": {
+        "requested_as_of": "2025-08-28",
+        "effective_vintage": "2025-08-28",
+        "latest_month": "2025-07-01",
+        "latest_value": "4.33",
+        "prior_month": "2025-04-01",
+        "prior_value": "4.33"
+      }
+    },
+    {
+      "return_month": "2025-10",
+      "trade_date": "2025-09-30",
+      "cutoff": "2025-09-29",
+      "rate_pair": {
+        "requested_as_of": "2025-09-29",
+        "effective_vintage": "2025-09-29",
+        "latest_month": "2025-08-01",
+        "latest_value": "4.33",
+        "prior_month": "2025-05-01",
+        "prior_value": "4.33"
+      }
+    },
+    {
+      "return_month": "2025-11",
+      "trade_date": "2025-10-31",
+      "cutoff": "2025-10-30",
+      "rate_pair": {
+        "requested_as_of": "2025-10-30",
+        "effective_vintage": "2025-10-30",
+        "latest_month": "2025-09-01",
+        "latest_value": "4.22",
+        "prior_month": "2025-06-01",
+        "prior_value": "4.33"
+      }
+    },
+    {
+      "return_month": "2025-12",
+      "trade_date": "2025-11-28",
+      "cutoff": "2025-11-27",
+      "rate_pair": {
+        "requested_as_of": "2025-11-27",
+        "effective_vintage": "2025-11-27",
+        "latest_month": "2025-10-01",
+        "latest_value": "4.09",
+        "prior_month": "2025-07-01",
+        "prior_value": "4.33"
+      }
+    },
+    {
+      "return_month": "2026-01",
+      "trade_date": "2025-12-31",
+      "cutoff": "2025-12-30",
+      "rate_pair": {
+        "requested_as_of": "2025-12-30",
+        "effective_vintage": "2025-12-30",
+        "latest_month": "2025-11-01",
+        "latest_value": "3.88",
+        "prior_month": "2025-08-01",
+        "prior_value": "4.33"
+      }
+    },
+    {
+      "return_month": "2026-02",
+      "trade_date": "2026-01-30",
+      "cutoff": "2026-01-29",
+      "rate_pair": {
+        "requested_as_of": "2026-01-29",
+        "effective_vintage": "2026-01-29",
+        "latest_month": "2025-12-01",
+        "latest_value": "3.72",
+        "prior_month": "2025-09-01",
+        "prior_value": "4.22"
+      }
+    },
+    {
+      "return_month": "2026-03",
+      "trade_date": "2026-02-27",
+      "cutoff": "2026-02-26",
+      "rate_pair": {
+        "requested_as_of": "2026-02-26",
+        "effective_vintage": "2026-02-26",
+        "latest_month": "2026-01-01",
+        "latest_value": "3.64",
+        "prior_month": "2025-10-01",
+        "prior_value": "4.09"
+      }
+    },
+    {
+      "return_month": "2026-04",
+      "trade_date": "2026-03-31",
+      "cutoff": "2026-03-30",
+      "rate_pair": {
+        "requested_as_of": "2026-03-30",
+        "effective_vintage": "2026-03-30",
+        "latest_month": "2026-02-01",
+        "latest_value": "3.64",
+        "prior_month": "2025-11-01",
+        "prior_value": "3.88"
+      }
+    },
+    {
+      "return_month": "2026-05",
+      "trade_date": "2026-04-30",
+      "cutoff": "2026-04-29",
+      "rate_pair": {
+        "requested_as_of": "2026-04-29",
+        "effective_vintage": "2026-04-29",
+        "latest_month": "2026-03-01",
+        "latest_value": "3.64",
+        "prior_month": "2025-12-01",
+        "prior_value": "3.72"
+      }
+    },
+    {
+      "return_month": "2026-06",
+      "trade_date": "2026-05-29",
+      "cutoff": "2026-05-28",
+      "rate_pair": {
+        "requested_as_of": "2026-05-28",
+        "effective_vintage": "2026-05-28",
+        "latest_month": "2026-04-01",
+        "latest_value": "3.64",
+        "prior_month": "2026-01-01",
+        "prior_value": "3.64"
+      }
+    },
+    {
+      "return_month": "2026-07",
+      "trade_date": "2026-06-30",
+      "cutoff": "2026-06-29",
+      "rate_pair": {
+        "requested_as_of": "2026-06-29",
+        "effective_vintage": "2026-06-29",
+        "latest_month": "2026-05-01",
+        "latest_value": "3.63",
+        "prior_month": "2026-02-01",
+        "prior_value": "3.64"
+      }
+    },
+    {
+      "return_month": "2026-08",
+      "trade_date": "2026-07-31",
+      "cutoff": "2026-07-30",
+      "rate_pair": {
+        "requested_as_of": "2026-07-30",
+        "effective_vintage": "2026-07-30",
+        "latest_month": "2026-06-01",
+        "latest_value": "3.63",
+        "prior_month": "2026-03-01",
+        "prior_value": "3.64"
+      }
+    },
+    {
+      "return_month": "2026-09",
+      "trade_date": "2026-08-31",
+      "cutoff": "2026-08-30",
+      "rate_pair": {
+        "requested_as_of": "2026-08-30",
+        "effective_vintage": "2026-08-30",
+        "latest_month": "2026-07-01",
+        "latest_value": "3.63",
+        "prior_month": "2026-04-01",
+        "prior_value": "3.64"
+      }
+    }
+  ]
+}

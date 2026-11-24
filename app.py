@@ -1,11 +1,13 @@
 """Streamlit interface for the Project 2 portfolio and mandate screens."""
 
+import json
 from copy import deepcopy
 from pathlib import Path
 
 import streamlit as st
 
 from mandate_checks import allocation_checks
+from sensitivity import development_sensitivity
 from signal_test import DEFENSIVE_EQUITY, NEUTRAL_EQUITY, REVIEW_FALLBACK_EQUITY
 from portfolio import (
     CORRELATIONS,
@@ -28,7 +30,7 @@ st.title("Meridian Foundation Reserve")
 st.caption("Built with AI help, a learning demonstration, not investment advice.")
 
 st.sidebar.header("Mandate and data")
-source = st.sidebar.radio("Price inputs", ["Project ETFs", "Meridian training", "Upload CSV"])
+source = st.sidebar.radio("Price inputs", ["Project ETFs", "Meridian training"])
 objective = st.sidebar.number_input(
     "Annual return objective (%)", min_value=-25.0, max_value=50.0,
     value=OBJECTIVE_RETURN * 100, step=0.1,
@@ -37,14 +39,7 @@ reserve_minimum = st.sidebar.number_input(
     "Reserve-eligible minimum (%)", min_value=0.0, max_value=100.0,
     value=DEFAULT_RESERVE_MINIMUM * 100, step=1.0,
 ) / 100
-if source == "Upload CSV":
-    price_file = st.sidebar.file_uploader(
-        "Upload prices.csv", type="csv", help="Date first, oldest first, and one adjusted-close column per ticker."
-    )
-    if price_file is None:
-        st.info("Upload a monthly adjusted-close CSV to continue.")
-        st.stop()
-elif source == "Project ETFs":
+if source == "Project ETFs":
     price_file = Path(__file__).resolve().parent / "data" / "verified_prices.csv"
 else:
     price_file = None
@@ -173,3 +168,41 @@ if policy_universe:
         "if it clears the screen and the reserve and turnover rules permit the move. "
         "This is a committee review, separate from the historical backtest."
     )
+
+st.header("Frozen FEDFUNDS holdout")
+result_file = Path(__file__).resolve().parent / "output" / "holdout.json"
+if result_file.is_file():
+    with result_file.open(encoding="utf-8") as handle:
+        evidence = json.load(handle)
+    st.caption(f"Historical holdout {evidence['holdout']}. The portfolio controls above use separate estimates.")
+    st.subheader(evidence["decision"] + " the tactical overlay" if evidence["decision"] == "Reject"
+                 else evidence["decision"])
+    st.write(". ".join(reason.capitalize() for reason in evidence["reasons"]) + ".")
+    holdout_rows = []
+    for name, periods in evidence["results"].items():
+        result = periods["holdout"]
+        holdout_rows.append({
+            "Strategy": name, "Gross": f"{result['gross']:.2%}", "Net": f"{result['net']:.2%}",
+            "Max drawdown": f"{result['max_drawdown']:.2%}",
+            "Defensive requests": result["defensive_requests"],
+        })
+    st.dataframe(holdout_rows, hide_index=True)
+else:
+    st.info("Run `python evaluate.py --write` to generate the frozen result.")
+
+st.header("Development sensitivity")
+st.caption("October 2021–September 2025 only. These controls leave the frozen holdout unchanged.")
+lag_control, cost_control = st.columns(2)
+lag = lag_control.selectbox("Signal cutoff before trade (calendar days)", [1, 7])
+cost_bp = cost_control.slider("Trading cost (bp per 100% one-way turnover)", 0, 50, 10)
+try:
+    sensitivity = development_sensitivity(lag, cost_bp)
+except (OSError, ValueError) as error:
+    st.error(f"Development data could not be verified: {error}")
+else:
+    st.dataframe([
+        {"Strategy": name, "Gross": f"{row['gross']:.2%}", "Net": f"{row['net']:.2%}",
+         "Max drawdown": f"{row['max_drawdown']:.2%}", "Turnover": f"{row['turnover']:.2%}",
+         "Defensive requests": row["defensive_requests"]}
+        for name, row in sensitivity.items()
+    ], hide_index=True)

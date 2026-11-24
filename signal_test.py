@@ -115,8 +115,8 @@ def read_months(prices_path, sessions, vintage_text, *, start, end, lag_days=1):
     return months, audit
 
 
-def compare(months, *, holdout_start, cost=.001, annual_cap=.25,
-            threshold=.25, neutral_equity=NEUTRAL_EQUITY, defensive_equity=DEFENSIVE_EQUITY):
+def simulate_rules(months, *, cost=.001, annual_cap=.25,
+                   threshold=.25, neutral_equity=NEUTRAL_EQUITY, defensive_equity=DEFENSIVE_EQUITY):
     """Run identical trading and cost mechanics across the fixed mix and two overlays."""
     def tactical(signal, sign):
         if signal is None:
@@ -137,6 +137,14 @@ def compare(months, *, holdout_start, cost=.001, annual_cap=.25,
     series["VT buy-and-hold reference"] = list(simulate(
         months, lambda _: None, initial_equity=1, cost=0
     ))
+    return series
+
+
+def compare(months, *, holdout_start, cost=.001, annual_cap=.25,
+            threshold=.25, neutral_equity=NEUTRAL_EQUITY, defensive_equity=DEFENSIVE_EQUITY):
+    """Report the frozen rule as separate development and holdout periods."""
+    series = simulate_rules(months, cost=cost, annual_cap=annual_cap, threshold=threshold,
+                            neutral_equity=neutral_equity, defensive_equity=defensive_equity)
     results = {}
     for name, rows in series.items():
         results[name] = {

@@ -1,0 +1,38 @@
+{
+  "prediction_commit": "b8736fd36489a1d330d46a7ad0f84939d2019a70",
+  "reserve_minimum_percent": 3.0,
+  "window": "all months",
+  "eligible_funds": [
+    "BIL",
+    "IEF"
+  ],
+  "increment_percentage_points": 5,
+  "baseline": {
+    "target_percent": 6.5,
+    "optimum": {
+      "weights": {
+        "BIL": 0.6000000000000001,
+        "IEF": 0.0,
+        "LQD": 0.0,
+        "VT": 0.4
+      },
+      "return": 0.069146517885933,
+      "volatility": 0.06037738050705611,
+      "reserve_weight": 0.6000000000000001
+    }
+  },
+  "changed": {
+    "target_percent": 7.2,
+    "optimum": {
+      "weights": {
+        "BIL": 0.55,
+        "IEF": 0.0,
+        "LQD": 0.0,
+        "VT": 0.45
+      },
+      "return": 0.07329699355932445,
+      "volatility": 0.06776457049309817,
+      "reserve_weight": 0.55
+    }
+  }
+}
