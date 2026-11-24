@@ -29,21 +29,31 @@ st.set_page_config(page_title="Meridian Foundation Reserve", layout="wide")
 st.title("Meridian Foundation Reserve")
 st.caption("Built with AI help, a learning demonstration, not investment advice.")
 
+
+def reset_base():
+    """Restore the reference scenario and all editable controls."""
+    keys = {"source", "objective", "reserve_minimum", "recent_window", "lag", "cost_bp"}
+    for key in list(st.session_state):
+        if key in keys or key.startswith(("return_", "eligibility_")):
+            del st.session_state[key]
+
+
 st.sidebar.header("Mandate and data")
-source = st.sidebar.radio("Price inputs", ["Project ETFs", "Meridian training"])
+st.sidebar.button("Reset to base", on_click=reset_base)
+source = st.sidebar.radio("Price inputs", ["Project ETFs", "Meridian training"], key="source")
 objective = st.sidebar.number_input(
     "Annual return objective (%)", min_value=-25.0, max_value=50.0,
-    value=OBJECTIVE_RETURN * 100, step=0.1,
+    value=OBJECTIVE_RETURN * 100, step=0.1, key="objective",
 ) / 100
 reserve_minimum = st.sidebar.number_input(
     "Reserve-eligible minimum (%)", min_value=0.0, max_value=100.0,
-    value=DEFAULT_RESERVE_MINIMUM * 100, step=1.0,
+    value=DEFAULT_RESERVE_MINIMUM * 100, step=1.0, key="reserve_minimum",
 ) / 100
 if source == "Project ETFs":
     price_file = Path(__file__).resolve().parent / "data" / "verified_prices.csv"
 else:
     price_file = None
-last_36_months = st.sidebar.toggle("Use last 36 monthly returns", value=False)
+last_36_months = st.sidebar.toggle("Use last 36 monthly returns", value=False, key="recent_window")
 
 
 def with_reserve_choices(sleeves, prefix):
@@ -53,7 +63,7 @@ def with_reserve_choices(sleeves, prefix):
         selected[name]["reserve_eligible"] = st.checkbox(
             f"Reserve eligible — {name}",
             value=selected[name]["reserve_eligible"],
-            key=f"{prefix}_reserve_{name}",
+            key=f"eligibility_{prefix}_{name}",
         )
     return selected
 
@@ -91,6 +101,7 @@ except ValueError as error:
 if source == "Project ETFs":
     for name in ("BIL", "IEF"):
         active_sleeves[name]["reserve_eligible"] = True
+        loaded_sleeves[name]["reserve_eligible"] = True
 
 st.write(f"Active inputs: **{data_label}**. Edit estimated returns and reserve eligibility below.")
 for name, data in active_sleeves.items():
@@ -100,11 +111,8 @@ for name, data in active_sleeves.items():
     ) / 100
 active_sleeves = with_reserve_choices(active_sleeves, source)
 
-# Compare original estimates using the current mandate and reserve selections.
-for name in loaded_sleeves:
-    loaded_sleeves[name]["reserve_eligible"] = active_sleeves[name]["reserve_eligible"]
 loaded_result = find_lowest_risk_mix(
-    loaded_sleeves, loaded_correlations, objective, reserve_minimum
+    loaded_sleeves, loaded_correlations, OBJECTIVE_RETURN, DEFAULT_RESERVE_MINIMUM
 )
 active_result = find_lowest_risk_mix(
     active_sleeves, active_correlations, objective, reserve_minimum
@@ -114,15 +122,15 @@ left, right = st.columns(2)
 with left:
     show_result("Lowest-risk mix for current controls", active_result)
 with right:
-    show_result("Answer for inputs as loaded", loaded_result)
-    st.caption("Uses the original estimates and the current mandate and reserve selections.")
+    show_result("Base scenario", loaded_result)
+    st.caption("Original estimates, 6.5% return target, 3% reserve floor, and default eligibility.")
 
 if active_result is not None and loaded_result is not None:
     largest_change = max(
         abs(active_result["weights"][name] - loaded_result["weights"][name])
         for name in active_result["weights"]
     )
-    st.info(f"Largest weight change from the loaded answer: **{largest_change * 100:.0f} points**.")
+    st.info(f"Largest weight change from base: **{largest_change * 100:.0f} points**.")
 else:
     st.info("Largest weight change is unavailable because one of the two searches has no feasible mix.")
 
@@ -196,8 +204,8 @@ else:
 st.header("Development sensitivity")
 st.caption("October 2021–September 2025 only. These controls leave the frozen holdout unchanged.")
 lag_control, cost_control = st.columns(2)
-lag = lag_control.selectbox("Signal cutoff before trade (calendar days)", [1, 7])
-cost_bp = cost_control.slider("Trading cost (bp per 100% one-way turnover)", 0, 50, 10)
+lag = lag_control.selectbox("Signal cutoff before trade (calendar days)", [1, 7], key="lag")
+cost_bp = cost_control.slider("Trading cost (bp per 100% one-way turnover)", 0, 50, 10, key="cost_bp")
 try:
     sensitivity = development_sensitivity(lag, cost_bp)
 except (OSError, ValueError) as error:

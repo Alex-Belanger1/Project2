@@ -14,4 +14,4 @@
 | Video 2 and transcript | Pending student recording and corrected transcript | Technical walkthrough and validation. At most 5:00. |
 | Video 3 and transcript | Pending student recording and corrected transcript | Live app and committee recommendation. At most 5:00. |
 
-For every video record its title, URL, actual duration, timestamp index, and logged-out playback check. Add the matching GitHub link for the corrected transcript. Record the final GitHub commit and use that same package for the Brightspace attachments. Save the Brightspace receipt.
+For every video record its title, URL, actual duration, timestamp index, and logged-out playback check. Give each corrected transcript real timestamps keyed to the recording, save it as `transcript-video-1.txt`, `transcript-video-2.txt`, or `transcript-video-3.txt`, and add its GitHub link. Start Video 3 with the required opening statements and live app demo, including the control change and **Reset to base**. Record the final GitHub commit and use that same package for the Brightspace attachments. Save the Brightspace receipt.

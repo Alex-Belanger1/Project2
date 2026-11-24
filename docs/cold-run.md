@@ -9,3 +9,5 @@ On November 23, 2026, Codex verified a fresh copy of submission candidate `a47c4
 | Operate the interface | Streamlit AppTest launched the app from the fresh folder. It checked equal-weight and inverse-volatility numbers, the 7.2% control and verdict flip, and 7-day / 25 bp development controls. The holdout table remained unchanged. |
 | Where the result appears | [Portfolio output](../output/portfolio-screen.md), [holdout output](../output/holdout.md), and the Frozen FEDFUNDS holdout panel of the app. |
 | Time | 6.67 seconds for archive, extraction and automated checks on this machine, excluding dependency installation. |
+
+After the pre-recording review, the live test was extended to change the target to 7.2%, confirm the defensive-target verdict flips, and confirm the side-by-side base stays at 6.5%. It also edited the reserve floor, estimation window, return estimates, eligibility, lag, and cost before using **Reset to base**. All controls returned to their defaults, and the frozen holdout remained unchanged.

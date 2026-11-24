@@ -22,6 +22,8 @@ The student's [verbatim AI-off prediction](changed-input-prediction.md) was comm
 
 The [actual result](changed-input-result.md) preserved feasibility but moved only five points into equity. Expected annual return increased from 6.91% to 7.33%; estimated volatility rose from 6.04% to 6.78%. The engine found that 45% VT was enough on the grid, so a larger equity allocation was unnecessary to meet the screen. This does not establish the behavior of realized drawdown. The candidate for committee review changes to 55% BIL / 45% VT if the higher hurdle is adopted. The signal decision stays reject.
 
+The changed target represents a persistent mandate assumption applied to the full screening exercise, rather than a one-period return shock. The pre-run prediction sized the weight effect at a 40-point increase in equity. The decision threshold is the portfolio's 7.2% estimated return hurdle, with the reserve floor held fixed. The original prediction was preserved as written.
+
 ## Signal selection ledger
 
 | Candidate | Status | Rule, costs, and rationale |
